@@ -1,0 +1,108 @@
+// Copyright (C) 1991-2008 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II"
+// VERSION "Version 8.1 Build 163 10/28/2008 SJ Web Edition"
+
+// DATE "08/16/2023 02:53:25"
+
+// 
+// Device: Altera EPF10K10TC144-3 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for PrimeTime (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module countzerosones (
+	diff);
+output 	[3:0] diff;
+
+wire gnd = 1'b0;
+wire vcc = 1'b1;
+
+// synopsys translate_off
+initial $sdf_annotate("countzerosones_v.sdo");
+// synopsys translate_on
+
+
+
+// atom is at PIN_43
+flex10ke_io \diff[0]~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.modesel(11'b10010000010),
+	.dataout(),
+	.padio(diff[0]));
+// synopsys translate_off
+// defparam \diff[0]~I .feedback_mode = "none";
+// defparam \diff[0]~I .operation_mode = "output";
+// defparam \diff[0]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_131
+flex10ke_io \diff[1]~I (
+	.datain(vcc),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.modesel(11'b10010000010),
+	.dataout(),
+	.padio(diff[1]));
+// synopsys translate_off
+// defparam \diff[1]~I .feedback_mode = "none";
+// defparam \diff[1]~I .operation_mode = "output";
+// defparam \diff[1]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_64
+flex10ke_io \diff[2]~I (
+	.datain(vcc),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.modesel(11'b10010000010),
+	.dataout(),
+	.padio(diff[2]));
+// synopsys translate_off
+// defparam \diff[2]~I .feedback_mode = "none";
+// defparam \diff[2]~I .operation_mode = "output";
+// defparam \diff[2]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at PIN_81
+flex10ke_io \diff[3]~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.modesel(11'b10010000010),
+	.dataout(),
+	.padio(diff[3]));
+// synopsys translate_off
+// defparam \diff[3]~I .feedback_mode = "none";
+// defparam \diff[3]~I .operation_mode = "output";
+// defparam \diff[3]~I .reg_source_mode = "none";
+// synopsys translate_on
+
+endmodule

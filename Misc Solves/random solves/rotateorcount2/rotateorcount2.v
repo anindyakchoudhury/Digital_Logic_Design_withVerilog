@@ -1,0 +1,19 @@
+module rotateorcount2(clk,A, B, rotate, R);
+
+            input clk, rotate;
+            input [3:0] A;
+            input [1:0] B;
+            output reg [3:0] R;
+            integer i;
+            always@(posedge clk)
+            begin
+                     R = A;
+                     if(rotate == 0)
+                     begin
+                              for (i=0; i<=(B+1); i =i+1)
+                              R = {R[0], R[3:1]};
+                     end
+                     else 
+                            R = R + 1;
+            end
+endmodule            

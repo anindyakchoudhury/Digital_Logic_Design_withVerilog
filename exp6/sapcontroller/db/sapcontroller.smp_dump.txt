@@ -1,0 +1,9 @@
+
+State Machine - |sapcontroller|y
+Name y.t6 y.t5 y.t4 y.t3 y.t2 y.t1 
+y.t1 0 0 0 0 0 0 
+y.t2 0 0 0 0 1 1 
+y.t3 0 0 0 1 0 1 
+y.t4 0 0 1 0 0 1 
+y.t5 0 1 0 0 0 1 
+y.t6 1 0 0 0 0 1 

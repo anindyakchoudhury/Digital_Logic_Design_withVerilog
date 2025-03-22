@@ -1,0 +1,10 @@
+Fitter Status : Successful - Wed Aug 23 22:23:37 2023
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : exam2
+Top-level Entity Name : exam2
+Family : FLEX10K
+Device : EPF10K10TC144-3
+Timing Models : Final
+Total logic elements : 4 / 576 ( < 1 % )
+Total pins : 7 / 102 ( 7 % )
+Total memory bits : 0 / 6,144 ( 0 % )

@@ -1,0 +1,10 @@
+Fitter Status : Successful - Thu Aug 03 14:01:39 2023
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : addersubtractor4bit_efficientway
+Top-level Entity Name : addersubtractor4bit_efficientway
+Family : FLEX10K
+Device : EPF10K10TC144-3
+Timing Models : Final
+Total logic elements : 31 / 576 ( 5 % )
+Total pins : 14 / 102 ( 14 % )
+Total memory bits : 0 / 6,144 ( 0 % )

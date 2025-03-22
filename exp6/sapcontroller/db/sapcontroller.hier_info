@@ -1,0 +1,41 @@
+|sapcontroller
+clock => y~0.IN1
+reset => y~1.IN1
+operation_code[1] => Mux3.IN19
+operation_code[1] => Mux2.IN19
+operation_code[1] => Mux0.IN19
+operation_code[1] => Mux1.IN19
+operation_code[1] => Decoder0.IN3
+operation_code[1] => Equal0.IN0
+operation_code[2] => Mux3.IN18
+operation_code[2] => Mux2.IN18
+operation_code[2] => Mux0.IN18
+operation_code[2] => Mux1.IN18
+operation_code[2] => Decoder0.IN2
+operation_code[2] => Equal0.IN1
+operation_code[3] => Mux3.IN17
+operation_code[3] => Mux2.IN17
+operation_code[3] => Mux0.IN17
+operation_code[3] => Mux1.IN17
+operation_code[3] => Decoder0.IN1
+operation_code[3] => Equal0.IN2
+operation_code[4] => Mux3.IN16
+operation_code[4] => Mux2.IN16
+operation_code[4] => Mux0.IN16
+operation_code[4] => Mux1.IN16
+operation_code[4] => Decoder0.IN0
+operation_code[4] => Equal0.IN3
+controller[1] <= controller[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+controller[2] <= controller[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+controller[3] <= controller[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+controller[4] <= <GND>
+controller[5] <= controller[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+controller[6] <= controller[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+controller[7] <= controller[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+controller[8] <= controller[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
+controller[9] <= controller[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
+controller[10] <= controller[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
+controller[11] <= controller[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
+controller[12] <= controller[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

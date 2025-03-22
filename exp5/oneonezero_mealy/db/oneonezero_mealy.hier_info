@@ -1,0 +1,16 @@
+|oneonezero_mealy
+clk => y[2]~reg0.CLK
+clk => y[1]~reg0.CLK
+reset => y[2]~reg0.ACLR
+reset => y[1]~reg0.ACLR
+w => Mux3.IN2
+w => Mux3.IN3
+w => Mux2.IN3
+w => Mux0.IN2
+z <= z$latch.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Y[1] <= Y[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Y[2] <= Y[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

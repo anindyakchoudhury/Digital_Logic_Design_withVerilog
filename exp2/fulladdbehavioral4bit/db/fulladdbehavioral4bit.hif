@@ -1,0 +1,100 @@
+Version 8.1 Build 163 10/28/2008 SJ Web Edition
+18
+1133
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+fulladdbehavioral4bit
+# storage
+db|fulladdbehavioral4bit.(0).cnf
+db|fulladdbehavioral4bit.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+fulladdbehavioral4bit.v
+981ce7802cd434316f51273bb71664b
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+fulladdbehavioral4bit:stage0
+fulladdbehavioral4bit:stage1
+fulladdbehavioral4bit:stage2
+fulladdbehavioral4bit:stage3
+}
+# macro_sequence
+
+# end
+# entity
+rippleadder4bitsubckt
+# storage
+db|fulladdbehavioral4bit.(1).cnf
+db|fulladdbehavioral4bit.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_sensitive
+# source_file
+rippleadder4bitsubckt.v
+8f26f675d2d530feef77c752422dc95f
+8
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+IGNORE_VERILOG_INITIAL_CONSTRUCTS
+OFF
+VERILOG_CONSTANT_LOOP_LIMIT
+5000
+VERILOG_NON_CONSTANT_LOOP_LIMIT
+250
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,35 @@
+|upanddowncounter_evenodd
+A[0] => Q~7.OUTPUTSELECT
+A[0] => Q~6.OUTPUTSELECT
+A[0] => Q~5.OUTPUTSELECT
+A[0] => Q~4.OUTPUTSELECT
+A[0] => Q~3.OUTPUTSELECT
+A[0] => Q~2.OUTPUTSELECT
+A[0] => Q~1.OUTPUTSELECT
+A[0] => Q~0.OUTPUTSELECT
+A[1] => ~NO_FANOUT~
+A[2] => ~NO_FANOUT~
+A[3] => ~NO_FANOUT~
+A[4] => ~NO_FANOUT~
+A[5] => ~NO_FANOUT~
+A[6] => ~NO_FANOUT~
+A[7] => ~NO_FANOUT~
+clk => Q[7]~reg0.CLK
+clk => Q[6]~reg0.CLK
+clk => Q[5]~reg0.CLK
+clk => Q[4]~reg0.CLK
+clk => Q[3]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[0]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[5] <= Q[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[6] <= Q[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[7] <= Q[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+load => ~NO_FANOUT~
+
+

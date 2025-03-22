@@ -1,0 +1,94 @@
+|mux16to1
+w[15] => w[15]~15.IN1
+w[14] => w[14]~14.IN1
+w[13] => w[13]~13.IN1
+w[12] => w[12]~12.IN1
+w[11] => w[11]~11.IN1
+w[10] => w[10]~10.IN1
+w[9] => w[9]~9.IN1
+w[8] => w[8]~8.IN1
+w[7] => w[7]~7.IN1
+w[6] => w[6]~6.IN1
+w[5] => w[5]~5.IN1
+w[4] => w[4]~4.IN1
+w[3] => w[3]~3.IN1
+w[2] => w[2]~2.IN1
+w[1] => w[1]~1.IN1
+w[0] => w[0]~0.IN1
+s[0] => s[0]~3.IN4
+s[1] => s[1]~2.IN4
+s[2] => s[2]~1.IN1
+s[3] => s[3]~0.IN1
+f <= mux4to1ifelse:Mux5.port2
+
+
+|mux16to1|mux4to1ifelse:Mux1
+w[3] => out~0.DATAA
+w[2] => out~0.DATAB
+w[1] => out~1.DATAB
+w[0] => out~2.DATAB
+s[0] => Equal0.IN30
+s[0] => Equal1.IN0
+s[0] => Equal2.IN31
+s[1] => Equal0.IN31
+s[1] => Equal1.IN31
+s[1] => Equal2.IN0
+out <= out~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux16to1|mux4to1ifelse:Mux2
+w[3] => out~0.DATAA
+w[2] => out~0.DATAB
+w[1] => out~1.DATAB
+w[0] => out~2.DATAB
+s[0] => Equal0.IN30
+s[0] => Equal1.IN0
+s[0] => Equal2.IN31
+s[1] => Equal0.IN31
+s[1] => Equal1.IN31
+s[1] => Equal2.IN0
+out <= out~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux16to1|mux4to1ifelse:Mux3
+w[3] => out~0.DATAA
+w[2] => out~0.DATAB
+w[1] => out~1.DATAB
+w[0] => out~2.DATAB
+s[0] => Equal0.IN30
+s[0] => Equal1.IN0
+s[0] => Equal2.IN31
+s[1] => Equal0.IN31
+s[1] => Equal1.IN31
+s[1] => Equal2.IN0
+out <= out~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux16to1|mux4to1ifelse:Mux4
+w[3] => out~0.DATAA
+w[2] => out~0.DATAB
+w[1] => out~1.DATAB
+w[0] => out~2.DATAB
+s[0] => Equal0.IN30
+s[0] => Equal1.IN0
+s[0] => Equal2.IN31
+s[1] => Equal0.IN31
+s[1] => Equal1.IN31
+s[1] => Equal2.IN0
+out <= out~2.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|mux16to1|mux4to1ifelse:Mux5
+w[3] => out~0.DATAA
+w[2] => out~0.DATAB
+w[1] => out~1.DATAB
+w[0] => out~2.DATAB
+s[0] => Equal0.IN30
+s[0] => Equal1.IN0
+s[0] => Equal2.IN31
+s[1] => Equal0.IN31
+s[1] => Equal1.IN31
+s[1] => Equal2.IN0
+out <= out~2.DB_MAX_OUTPUT_PORT_TYPE
+
+

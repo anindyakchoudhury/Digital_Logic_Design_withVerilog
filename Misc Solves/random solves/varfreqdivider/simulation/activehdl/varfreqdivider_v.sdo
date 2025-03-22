@@ -1,0 +1,155 @@
+// Copyright (C) 1991-2008 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+
+// 
+// Device: Altera EPF10K10TC144-3 Package TQFP144
+// 
+
+// 
+// This SDF file should be used for Active-HDL (Verilog) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "varfreqdivider")
+  (DATE "08/16/2023 01:51:13")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus II")
+  (VERSION "Version 8.1 Build 163 10/28/2008 SJ Web Edition")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "flex10ke_asynch_io")
+    (INSTANCE clk\~I.inst1)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio dataout (1900:1900:1900) (1900:1900:1900))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "flex10ke_asynch_lcell")
+    (INSTANCE Q_rtl_0\|wysi_counter\|counter_cell\[0\].lecomb)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH qfbkin regin (1500:1500:1500) (1500:1500:1500))
+        (IOPATH qfbkin cout (900:900:900) (900:900:900))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "flex10ke_lcell_register")
+    (INSTANCE Q_rtl_0\|wysi_counter\|counter_cell\[0\].lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2000:2000:2000) (2000:2000:2000))
+        (IOPATH (posedge clk) qfbko (900:900:900) (900:900:900))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (1300:1300:1300))
+      (HOLD datain (posedge clk) (1400:1400:1400))
+    )
+  )
+  (CELL
+    (CELLTYPE "flex10ke_asynch_lcell")
+    (INSTANCE Q_rtl_0\|wysi_counter\|counter_cell\[1\].lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT cin (0:0:0) (0:0:0))
+        (IOPATH cin regin (600:600:600) (600:600:600))
+        (IOPATH qfbkin regin (1500:1500:1500) (1500:1500:1500))
+        (IOPATH qfbkin cout (900:900:900) (900:900:900))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "flex10ke_lcell_register")
+    (INSTANCE Q_rtl_0\|wysi_counter\|counter_cell\[1\].lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2000:2000:2000) (2000:2000:2000))
+        (IOPATH (posedge clk) qfbko (900:900:900) (900:900:900))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (1300:1300:1300))
+      (HOLD datain (posedge clk) (1400:1400:1400))
+    )
+  )
+  (CELL
+    (CELLTYPE "flex10ke_asynch_lcell")
+    (INSTANCE Q_rtl_0\|wysi_counter\|counter_cell\[2\].lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT cin (0:0:0) (0:0:0))
+        (IOPATH cin regin (600:600:600) (600:600:600))
+        (IOPATH qfbkin regin (1500:1500:1500) (1500:1500:1500))
+        (IOPATH qfbkin cout (900:900:900) (900:900:900))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "flex10ke_lcell_register")
+    (INSTANCE Q_rtl_0\|wysi_counter\|counter_cell\[2\].lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2000:2000:2000) (2000:2000:2000))
+        (IOPATH (posedge clk) qfbko (900:900:900) (900:900:900))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (1300:1300:1300))
+      (HOLD datain (posedge clk) (1400:1400:1400))
+    )
+  )
+  (CELL
+    (CELLTYPE "flex10ke_asynch_lcell")
+    (INSTANCE Q_rtl_0\|wysi_counter\|counter_cell\[3\].lecomb)
+    (DELAY
+      (ABSOLUTE
+        (PORT cin (0:0:0) (0:0:0))
+        (IOPATH cin regin (600:600:600) (600:600:600))
+        (IOPATH qfbkin regin (1500:1500:1500) (1500:1500:1500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "flex10ke_lcell_register")
+    (INSTANCE Q_rtl_0\|wysi_counter\|counter_cell\[3\].lereg)
+    (DELAY
+      (ABSOLUTE
+        (PORT clk (2000:2000:2000) (2000:2000:2000))
+        (IOPATH (posedge clk) regout (900:900:900) (900:900:900))
+        (IOPATH (posedge clk) qfbko (900:900:900) (900:900:900))
+      )
+    )
+    (TIMINGCHECK
+      (SETUP datain (posedge clk) (1300:1300:1300))
+      (HOLD datain (posedge clk) (1400:1400:1400))
+    )
+  )
+  (CELL
+    (CELLTYPE "flex10ke_asynch_io")
+    (INSTANCE C\~I.inst1)
+    (DELAY
+      (ABSOLUTE
+        (PORT datain (700:700:700) (700:700:700))
+        (IOPATH datain padio (3900:3900:3900) (3900:3900:3900))
+      )
+    )
+  )
+)

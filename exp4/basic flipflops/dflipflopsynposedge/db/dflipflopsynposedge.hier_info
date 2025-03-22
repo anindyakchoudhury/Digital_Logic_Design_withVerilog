@@ -1,0 +1,7 @@
+|dflipflopsynposedge
+clk => Q~reg0.CLK
+d => Q~0.DATAB
+reset => Q~0.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

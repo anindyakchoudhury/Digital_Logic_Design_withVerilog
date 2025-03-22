@@ -1,0 +1,201 @@
+// Copyright (C) 1991-2008 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II"
+// VERSION "Version 8.1 Build 163 10/28/2008 SJ Web Edition"
+
+// DATE "08/16/2023 01:51:13"
+
+// 
+// Device: Altera EPF10K10TC144-3 Package TQFP144
+// 
+
+// 
+// This Verilog file should be used for PrimeTime (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module varfreqdivider (
+	clk,
+	C);
+input 	clk;
+output 	C;
+
+wire gnd = 1'b0;
+wire vcc = 1'b1;
+
+// synopsys translate_off
+initial $sdf_annotate("varfreqdivider_v.sdo");
+// synopsys translate_on
+
+wire \Q_rtl_0|wysi_counter|q[2] ;
+wire \Q_rtl_0|wysi_counter|q[1] ;
+wire \Q_rtl_0|wysi_counter|q[0] ;
+wire \clk~dataout ;
+wire \Q_rtl_0|wysi_counter|counter_cell[0]~COUT ;
+wire \Q_rtl_0|wysi_counter|counter_cell[1]~COUT ;
+wire \Q_rtl_0|wysi_counter|counter_cell[2]~COUT ;
+wire \Q_rtl_0|wysi_counter|q[3] ;
+
+
+// atom is at PIN_55
+flex10ke_io \clk~I (
+	.datain(gnd),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(gnd),
+	.modesel(11'b01010000001),
+	.dataout(\clk~dataout ),
+	.padio(clk));
+// synopsys translate_off
+// defparam \clk~I .feedback_mode = "from_pin";
+// defparam \clk~I .operation_mode = "input";
+// defparam \clk~I .reg_source_mode = "none";
+// synopsys translate_on
+
+// atom is at LC2_C1
+flex10ke_lcell \Q_rtl_0|wysi_counter|counter_cell[0] (
+// Equation(s):
+// \Q_rtl_0|wysi_counter|counter_cell[0]~COUT  = CARRY()
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(gnd),
+	.cascin(vcc),
+	.modesel(7'b1000100),
+	.combout(),
+	.regout(\Q_rtl_0|wysi_counter|q[0] ),
+	.cout(\Q_rtl_0|wysi_counter|counter_cell[0]~COUT ),
+	.cascout(),
+	.pathsel(10'b1000000000));
+// synopsys translate_off
+// defparam \Q_rtl_0|wysi_counter|counter_cell[0] .clock_enable_mode = "false";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[0] .lut_mask = "33aa";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[0] .operation_mode = "up_dn_cntr";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[0] .output_mode = "none";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[0] .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC3_C1
+flex10ke_lcell \Q_rtl_0|wysi_counter|counter_cell[1] (
+// Equation(s):
+// \Q_rtl_0|wysi_counter|counter_cell[1]~COUT  = CARRY( & (\Q_rtl_0|wysi_counter|counter_cell[0]~COUT ))
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(\Q_rtl_0|wysi_counter|counter_cell[0]~COUT ),
+	.cascin(vcc),
+	.modesel(7'b1000100),
+	.combout(),
+	.regout(\Q_rtl_0|wysi_counter|q[1] ),
+	.cout(\Q_rtl_0|wysi_counter|counter_cell[1]~COUT ),
+	.cascout(),
+	.pathsel(10'b1000000000));
+// synopsys translate_off
+// defparam \Q_rtl_0|wysi_counter|counter_cell[1] .cin_used = "true";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[1] .clock_enable_mode = "false";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[1] .lut_mask = "3ca0";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[1] .operation_mode = "up_dn_cntr";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[1] .output_mode = "none";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[1] .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC4_C1
+flex10ke_lcell \Q_rtl_0|wysi_counter|counter_cell[2] (
+// Equation(s):
+// \Q_rtl_0|wysi_counter|counter_cell[2]~COUT  = CARRY( & (\Q_rtl_0|wysi_counter|counter_cell[1]~COUT ))
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(\Q_rtl_0|wysi_counter|counter_cell[1]~COUT ),
+	.cascin(vcc),
+	.modesel(7'b1000100),
+	.combout(),
+	.regout(\Q_rtl_0|wysi_counter|q[2] ),
+	.cout(\Q_rtl_0|wysi_counter|counter_cell[2]~COUT ),
+	.cascout(),
+	.pathsel(10'b1000000000));
+// synopsys translate_off
+// defparam \Q_rtl_0|wysi_counter|counter_cell[2] .cin_used = "true";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[2] .clock_enable_mode = "false";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[2] .lut_mask = "3ca0";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[2] .operation_mode = "up_dn_cntr";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[2] .output_mode = "none";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[2] .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at LC5_C1
+flex10ke_lcell \Q_rtl_0|wysi_counter|counter_cell[3] (
+// Equation(s):
+// \Q_rtl_0|wysi_counter|q[3]  = DFFEA(\Q_rtl_0|wysi_counter|q[3]  $ \Q_rtl_0|wysi_counter|counter_cell[2]~COUT , GLOBAL(\clk~dataout ), , , , , )
+
+	.dataa(vcc),
+	.datab(vcc),
+	.datac(vcc),
+	.datad(vcc),
+	.aclr(gnd),
+	.aload(gnd),
+	.clk(\clk~dataout ),
+	.cin(\Q_rtl_0|wysi_counter|counter_cell[2]~COUT ),
+	.cascin(vcc),
+	.modesel(7'b1000100),
+	.combout(),
+	.regout(\Q_rtl_0|wysi_counter|q[3] ),
+	.cout(),
+	.cascout(),
+	.pathsel(10'b0000100000));
+// synopsys translate_off
+// defparam \Q_rtl_0|wysi_counter|counter_cell[3] .cin_used = "true";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[3] .clock_enable_mode = "false";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[3] .lut_mask = "3c3c";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[3] .operation_mode = "up_dn_cntr";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[3] .output_mode = "reg_only";
+// defparam \Q_rtl_0|wysi_counter|counter_cell[3] .packed_mode = "false";
+// synopsys translate_on
+
+// atom is at PIN_73
+flex10ke_io \C~I (
+	.datain(\Q_rtl_0|wysi_counter|q[3] ),
+	.clk(gnd),
+	.ena(vcc),
+	.aclr(gnd),
+	.oe(vcc),
+	.modesel(11'b10010000010),
+	.dataout(),
+	.padio(C));
+// synopsys translate_off
+// defparam \C~I .feedback_mode = "none";
+// defparam \C~I .operation_mode = "output";
+// defparam \C~I .reg_source_mode = "none";
+// synopsys translate_on
+
+endmodule

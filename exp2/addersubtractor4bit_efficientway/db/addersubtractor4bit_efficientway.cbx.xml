@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="addersubtractor4bit_efficientway">
+		<CBX_INST_ENTRY INSTANCE_NAME="|addersubtractor4bit_efficientway|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_ojh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|addersubtractor4bit_efficientway|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_pjh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|addersubtractor4bit_efficientway|lpm_add_sub:Add2" CBX_FILE_NAME="add_sub_pjh.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

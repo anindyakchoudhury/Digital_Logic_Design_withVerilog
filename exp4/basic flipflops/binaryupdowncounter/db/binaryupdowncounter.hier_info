@@ -1,0 +1,27 @@
+|binaryupdowncounter
+clk => Q[3]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[0]~reg0.CLK
+load => Q~11.OUTPUTSELECT
+load => Q~10.OUTPUTSELECT
+load => Q~9.OUTPUTSELECT
+load => Q~8.OUTPUTSELECT
+data[0] => Q~11.DATAB
+data[1] => Q~10.DATAB
+data[2] => Q~9.DATAB
+data[3] => Q~8.DATAB
+up => Q~7.OUTPUTSELECT
+up => Q~6.OUTPUTSELECT
+up => Q~5.OUTPUTSELECT
+up => Q~4.OUTPUTSELECT
+down => Q~3.OUTPUTSELECT
+down => Q~2.OUTPUTSELECT
+down => Q~1.OUTPUTSELECT
+down => Q~0.OUTPUTSELECT
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

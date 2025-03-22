@@ -1,0 +1,449 @@
+Simulator report for upanddowncounter_evenodd
+Wed Aug 16 11:52:52 2023
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 100.0 us     ;
+; Simulation Netlist Size     ; 190 nodes    ;
+; Simulation Coverage         ;      36.73 % ;
+; Total Number of Transitions ; 584          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; FLEX10K      ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      36.73 % ;
+; Total nodes checked                                 ; 190          ;
+; Total output ports checked                          ; 196          ;
+; Total output ports with complete 1/0-value coverage ; 72           ;
+; Total output ports with no 1/0-value coverage       ; 93           ;
+; Total output ports with no 1-value coverage         ; 106          ;
+; Total output ports with no 0-value coverage         ; 111          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                      ;
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                     ; Output Port Name                                                                              ; Output Port Type ;
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
+; |upanddowncounter_evenodd|Q[2]~reg0                                                           ; |upanddowncounter_evenodd|Q[2]~reg0                                                           ; regout           ;
+; |upanddowncounter_evenodd|Q[1]~reg0                                                           ; |upanddowncounter_evenodd|Q[1]~reg0                                                           ; regout           ;
+; |upanddowncounter_evenodd|Q[0]~reg0                                                           ; |upanddowncounter_evenodd|Q[0]~reg0                                                           ; regout           ;
+; |upanddowncounter_evenodd|Q~3                                                                 ; |upanddowncounter_evenodd|Q~3                                                                 ; out              ;
+; |upanddowncounter_evenodd|Q~4                                                                 ; |upanddowncounter_evenodd|Q~4                                                                 ; out              ;
+; |upanddowncounter_evenodd|Q~5                                                                 ; |upanddowncounter_evenodd|Q~5                                                                 ; out              ;
+; |upanddowncounter_evenodd|Q~6                                                                 ; |upanddowncounter_evenodd|Q~6                                                                 ; out              ;
+; |upanddowncounter_evenodd|Q~7                                                                 ; |upanddowncounter_evenodd|Q~7                                                                 ; out              ;
+; |upanddowncounter_evenodd|clk                                                                 ; |upanddowncounter_evenodd|clk                                                                 ; out              ;
+; |upanddowncounter_evenodd|Q[0]                                                                ; |upanddowncounter_evenodd|Q[0]                                                                ; pin_out          ;
+; |upanddowncounter_evenodd|Q[1]                                                                ; |upanddowncounter_evenodd|Q[1]                                                                ; pin_out          ;
+; |upanddowncounter_evenodd|Q[2]                                                                ; |upanddowncounter_evenodd|Q[2]                                                                ; pin_out          ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[1]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[1]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[2]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[2]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[3]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[3]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[4]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[4]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~6                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~6                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~7                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~7                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~8                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~8                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~9                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~9                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~10                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~10                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~19                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~19                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~24                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~24                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~25                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~25                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~26                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~26                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~27                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~27                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~33                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~33                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~34                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~34                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~35                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~35                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[3]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[2]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[0]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[0]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[1]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[1]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[2]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[2]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[3]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[3]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[4]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[4]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~0                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~3                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~6                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~6                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~7                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~7                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~16                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~16                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~17                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~17                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~22                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~22                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~23                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~23                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~24                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~24                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~29                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~29                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~30                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~30                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~31                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~31                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[3]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[2]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; sout             ;
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                         ;
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                     ; Output Port Name                                                                              ; Output Port Type ;
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
+; |upanddowncounter_evenodd|Q[7]~reg0                                                           ; |upanddowncounter_evenodd|Q[7]~reg0                                                           ; regout           ;
+; |upanddowncounter_evenodd|Q[6]~reg0                                                           ; |upanddowncounter_evenodd|Q[6]~reg0                                                           ; regout           ;
+; |upanddowncounter_evenodd|Q[5]~reg0                                                           ; |upanddowncounter_evenodd|Q[5]~reg0                                                           ; regout           ;
+; |upanddowncounter_evenodd|Q[4]~reg0                                                           ; |upanddowncounter_evenodd|Q[4]~reg0                                                           ; regout           ;
+; |upanddowncounter_evenodd|Q~0                                                                 ; |upanddowncounter_evenodd|Q~0                                                                 ; out              ;
+; |upanddowncounter_evenodd|Q~1                                                                 ; |upanddowncounter_evenodd|Q~1                                                                 ; out              ;
+; |upanddowncounter_evenodd|Q~2                                                                 ; |upanddowncounter_evenodd|Q~2                                                                 ; out              ;
+; |upanddowncounter_evenodd|A[0]                                                                ; |upanddowncounter_evenodd|A[0]                                                                ; out              ;
+; |upanddowncounter_evenodd|Q[4]                                                                ; |upanddowncounter_evenodd|Q[4]                                                                ; pin_out          ;
+; |upanddowncounter_evenodd|Q[5]                                                                ; |upanddowncounter_evenodd|Q[5]                                                                ; pin_out          ;
+; |upanddowncounter_evenodd|Q[6]                                                                ; |upanddowncounter_evenodd|Q[6]                                                                ; pin_out          ;
+; |upanddowncounter_evenodd|Q[7]                                                                ; |upanddowncounter_evenodd|Q[7]                                                                ; pin_out          ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[5]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[5]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[6]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[6]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[7]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[7]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[8]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add1|result_node[8]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~0                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~1                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~2                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~3                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[8]~1                      ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[8]~1                      ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[8]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[8]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[7]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[7]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[6]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[6]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[5]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[5]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]~1                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]~1                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]~2                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]~2                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]~3                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]~3                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]~4                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]~4                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~5                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~5                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~4                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~4                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~5                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~5                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~6                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~6                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~7                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~11                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~11                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~12                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~12                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~13                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~13                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~14                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~14                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~15                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~15                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~16                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~16                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~17                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~17                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~18                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~18                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[8] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[5]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[5]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[6]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[6]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[7]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[7]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~1                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~2                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[7]~1                      ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[7]~1                      ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[7]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[7]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[6]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[6]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[5]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[5]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]~1                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]~1                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]~2                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]~2                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~3                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~3                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~4                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~4                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~4                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~5                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~6                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~7                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~8                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~9                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~10                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~11                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~11                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~12                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~12                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~13                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~13                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~14                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~14                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~18                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~18                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~19                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~19                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~20                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~20                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~21                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~21                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~25                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~25                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~26                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~26                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~27                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~27                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~28                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~28                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[6]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[5]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[4]      ; cout             ;
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                         ;
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                     ; Output Port Name                                                                              ; Output Port Type ;
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
+; |upanddowncounter_evenodd|Q[7]~reg0                                                           ; |upanddowncounter_evenodd|Q[7]~reg0                                                           ; regout           ;
+; |upanddowncounter_evenodd|Q[6]~reg0                                                           ; |upanddowncounter_evenodd|Q[6]~reg0                                                           ; regout           ;
+; |upanddowncounter_evenodd|Q[5]~reg0                                                           ; |upanddowncounter_evenodd|Q[5]~reg0                                                           ; regout           ;
+; |upanddowncounter_evenodd|Q[4]~reg0                                                           ; |upanddowncounter_evenodd|Q[4]~reg0                                                           ; regout           ;
+; |upanddowncounter_evenodd|Q[3]~reg0                                                           ; |upanddowncounter_evenodd|Q[3]~reg0                                                           ; regout           ;
+; |upanddowncounter_evenodd|Q~0                                                                 ; |upanddowncounter_evenodd|Q~0                                                                 ; out              ;
+; |upanddowncounter_evenodd|Q~1                                                                 ; |upanddowncounter_evenodd|Q~1                                                                 ; out              ;
+; |upanddowncounter_evenodd|Q~2                                                                 ; |upanddowncounter_evenodd|Q~2                                                                 ; out              ;
+; |upanddowncounter_evenodd|A[0]                                                                ; |upanddowncounter_evenodd|A[0]                                                                ; out              ;
+; |upanddowncounter_evenodd|Q[3]                                                                ; |upanddowncounter_evenodd|Q[3]                                                                ; pin_out          ;
+; |upanddowncounter_evenodd|Q[4]                                                                ; |upanddowncounter_evenodd|Q[4]                                                                ; pin_out          ;
+; |upanddowncounter_evenodd|Q[5]                                                                ; |upanddowncounter_evenodd|Q[5]                                                                ; pin_out          ;
+; |upanddowncounter_evenodd|Q[6]                                                                ; |upanddowncounter_evenodd|Q[6]                                                                ; pin_out          ;
+; |upanddowncounter_evenodd|Q[7]                                                                ; |upanddowncounter_evenodd|Q[7]                                                                ; pin_out          ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~0                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~1                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~2                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~3                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[8]~1                      ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[8]~1                      ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[8]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[8]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[7]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[7]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[6]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[6]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[5]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[5]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]~1                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[8]~1                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]~2                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[7]~2                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]~3                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[6]~3                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]~4                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]~4                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~4                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~4                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~5                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~5                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~6                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~6                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~7                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~8                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~11                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~11                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~12                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~12                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~13                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~13                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~14                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~14                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~15                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~15                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~16                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~16                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~17                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~17                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~18                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~18                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~20                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~20                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~21                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~21                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~22                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~22                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~23                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~23                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~28                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~28                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~29                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~29                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~30                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~30                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~31                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~31                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~32                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|_~32                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[7]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[6]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[5]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[4]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |upanddowncounter_evenodd|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[5]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[5]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[6]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[6]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[7]                                     ; |upanddowncounter_evenodd|lpm_add_sub:Add0|result_node[7]                                     ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~1                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~2                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[7]~1                      ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[7]~1                      ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[7]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[7]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[6]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[6]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[5]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[5]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]~1                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]~1                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]~2                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]~2                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~3                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~3                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~4                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~4                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~5                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~5                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                    ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                    ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~4                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~5                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~6                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~7                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~8                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~9                                  ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~10                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~11                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~11                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~12                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~12                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~13                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~13                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~14                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~14                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~15                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~15                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~18                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~18                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~19                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~19                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~20                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~20                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~21                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~21                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~25                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~25                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~26                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~26                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~27                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~27                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~28                                 ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|_~28                                 ; out0             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[6]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[5]      ; cout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; sout             ;
+; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |upanddowncounter_evenodd|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[4]      ; cout             ;
++-----------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Wed Aug 16 11:52:52 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off upanddowncounter_evenodd -c upanddowncounter_evenodd
+Info: Using vector source file "F:/Verilog Codes/random solves/upanddowncounter_evenodd/upanddowncounter_evenodd.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      36.73 %
+Info: Number of transitions in simulation is 584
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 151 megabytes
+    Info: Processing ended: Wed Aug 16 11:52:52 2023
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

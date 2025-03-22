@@ -1,0 +1,8 @@
+|labex5_oddis1
+s[0] => f.DATAIN
+s[1] => ~NO_FANOUT~
+s[2] => ~NO_FANOUT~
+s[3] => ~NO_FANOUT~
+f <= s[0].DB_MAX_OUTPUT_PORT_TYPE
+
+

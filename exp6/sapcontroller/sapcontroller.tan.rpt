@@ -1,0 +1,651 @@
+Classic Timing Analyzer report for sapcontroller
+Tue Sep 12 21:37:44 2023
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Timing Analyzer Settings
+  4. Clock Settings Summary
+  5. Clock Setup: 'clock'
+  6. Clock Hold: 'clock'
+  7. tsu
+  8. tco
+  9. th
+ 10. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                                                                                                                                                                                      ;
++------------------------------+------------------------------------------+---------------+------------------------------------------------+---------------------+----------------------+-------------------+-------------------+--------------+
+; Type                         ; Slack                                    ; Required Time ; Actual Time                                    ; From                ; To                   ; From Clock        ; To Clock          ; Failed Paths ;
++------------------------------+------------------------------------------+---------------+------------------------------------------------+---------------------+----------------------+-------------------+-------------------+--------------+
+; Worst-case tsu               ; N/A                                      ; None          ; 8.000 ns                                       ; operation_code[1]   ; controller[6]$latch  ; --                ; clock             ; 0            ;
+; Worst-case tco               ; N/A                                      ; None          ; 18.500 ns                                      ; controller[3]$latch ; controller[3]        ; operation_code[3] ; --                ; 0            ;
+; Worst-case th                ; N/A                                      ; None          ; 4.200 ns                                       ; operation_code[2]   ; controller[6]$latch  ; --                ; operation_code[3] ; 0            ;
+; Clock Setup: 'clock'         ; N/A                                      ; None          ; Restricted to 125.00 MHz ( period = 8.000 ns ) ; y.t3                ; y.t4                 ; clock             ; clock             ; 0            ;
+; Clock Hold: 'clock'          ; Not operational: Clock Skew > Data Delay ; None          ; N/A                                            ; y.t1                ; controller[11]$latch ; clock             ; clock             ; 4            ;
+; Total number of failed paths ;                                          ;               ;                                                ;                     ;                      ;                   ;                   ; 4            ;
++------------------------------+------------------------------------------+---------------+------------------------------------------------+---------------------+----------------------+-------------------+-------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Timing Analyzer Settings                                                                                           ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Option                                                              ; Setting            ; From ; To ; Entity Name ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+; Device Name                                                         ; EPF10K10TC144-3    ;      ;    ;             ;
+; Timing Models                                                       ; Final              ;      ;    ;             ;
+; Default hold multicycle                                             ; Same as Multicycle ;      ;    ;             ;
+; Cut paths between unrelated clock domains                           ; On                 ;      ;    ;             ;
+; Cut off read during write signal paths                              ; On                 ;      ;    ;             ;
+; Cut off feedback from I/O pins                                      ; On                 ;      ;    ;             ;
+; Report Combined Fast/Slow Timing                                    ; Off                ;      ;    ;             ;
+; Ignore Clock Settings                                               ; Off                ;      ;    ;             ;
+; Analyze latches as synchronous elements                             ; On                 ;      ;    ;             ;
+; Enable Recovery/Removal analysis                                    ; Off                ;      ;    ;             ;
+; Enable Clock Latency                                                ; Off                ;      ;    ;             ;
+; Use TimeQuest Timing Analyzer                                       ; Off                ;      ;    ;             ;
+; Minimum Core Junction Temperature                                   ; 0                  ;      ;    ;             ;
+; Maximum Core Junction Temperature                                   ; 85                 ;      ;    ;             ;
+; Number of source nodes to report per destination node               ; 10                 ;      ;    ;             ;
+; Number of destination nodes to report                               ; 10                 ;      ;    ;             ;
+; Number of paths to report                                           ; 200                ;      ;    ;             ;
+; Report Minimum Timing Checks                                        ; Off                ;      ;    ;             ;
+; Use Fast Timing Models                                              ; Off                ;      ;    ;             ;
+; Report IO Paths Separately                                          ; Off                ;      ;    ;             ;
+; Perform Multicorner Analysis                                        ; Off                ;      ;    ;             ;
+; Reports the worst-case path for each clock domain and analysis      ; Off                ;      ;    ;             ;
+; Removes common clock path pessimism (CCPP) during slack computation ; Off                ;      ;    ;             ;
+; Output I/O Timing Endpoint                                          ; Near End           ;      ;    ;             ;
++---------------------------------------------------------------------+--------------------+------+----+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Settings Summary                                                                                                                                                               ;
++-------------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; Clock Node Name   ; Clock Setting Name ; Type     ; Fmax Requirement ; Early Latency ; Late Latency ; Based on ; Multiply Base Fmax by ; Divide Base Fmax by ; Offset ; Phase offset ;
++-------------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+; clock             ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; operation_code[4] ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; operation_code[3] ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; operation_code[2] ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
+; operation_code[1] ;                    ; User Pin ; None             ; 0.000 ns      ; 0.000 ns     ; --       ; N/A                   ; N/A                 ; N/A    ;              ;
++-------------------+--------------------+----------+------------------+---------------+--------------+----------+-----------------------+---------------------+--------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Setup: 'clock'                                                                                                                                                                             ;
++-------+------------------------------------------------+------+----------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; Slack ; Actual fmax (period)                           ; From ; To                   ; From Clock ; To Clock ; Required Setup Relationship ; Required Longest P2P Time ; Actual Longest P2P Time ;
++-------+------------------------------------------------+------+----------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+; N/A   ; 156.25 MHz ( period = 6.400 ns )               ; y.t6 ; controller[6]$latch  ; clock      ; clock    ; None                        ; None                      ; 8.300 ns                ;
+; N/A   ; Restricted to 125.00 MHz ( period = 8.000 ns ) ; y.t3 ; y.t4                 ; clock      ; clock    ; None                        ; None                      ; 3.100 ns                ;
+; N/A   ; 200.00 MHz ( period = 5.000 ns )               ; y.t5 ; controller[2]$latch  ; clock      ; clock    ; None                        ; None                      ; 6.900 ns                ;
+; N/A   ; 200.00 MHz ( period = 5.000 ns )               ; y.t3 ; controller[9]$latch  ; clock      ; clock    ; None                        ; None                      ; 5.600 ns                ;
+; N/A   ; Restricted to 125.00 MHz ( period = 8.000 ns ) ; y.t6 ; y.t1                 ; clock      ; clock    ; None                        ; None                      ; 2.700 ns                ;
+; N/A   ; 227.27 MHz ( period = 4.400 ns )               ; y.t4 ; controller[1]$latch  ; clock      ; clock    ; None                        ; None                      ; 6.300 ns                ;
+; N/A   ; 227.27 MHz ( period = 4.400 ns )               ; y.t6 ; controller[3]$latch  ; clock      ; clock    ; None                        ; None                      ; 6.300 ns                ;
+; N/A   ; 227.27 MHz ( period = 4.400 ns )               ; y.t4 ; controller[5]$latch  ; clock      ; clock    ; None                        ; None                      ; 6.300 ns                ;
+; N/A   ; 227.27 MHz ( period = 4.400 ns )               ; y.t5 ; controller[9]$latch  ; clock      ; clock    ; None                        ; None                      ; 5.000 ns                ;
+; N/A   ; 232.56 MHz ( period = 4.300 ns )               ; y.t5 ; controller[6]$latch  ; clock      ; clock    ; None                        ; None                      ; 6.200 ns                ;
+; N/A   ; Restricted to 125.00 MHz ( period = 8.000 ns ) ; y.t3 ; y.t3                 ; clock      ; clock    ; None                        ; None                      ; 2.000 ns                ;
+; N/A   ; Restricted to 125.00 MHz ( period = 8.000 ns ) ; y.t2 ; y.t3                 ; clock      ; clock    ; None                        ; None                      ; 2.000 ns                ;
+; N/A   ; 250.00 MHz ( period = 4.000 ns )               ; y.t4 ; controller[10]$latch ; clock      ; clock    ; None                        ; None                      ; 5.800 ns                ;
+; N/A   ; 256.41 MHz ( period = 3.900 ns )               ; y.t4 ; controller[7]$latch  ; clock      ; clock    ; None                        ; None                      ; 5.800 ns                ;
+; N/A   ; Restricted to 125.00 MHz ( period = 8.000 ns ) ; y.t1 ; y.t2                 ; clock      ; clock    ; None                        ; None                      ; 1.500 ns                ;
+; N/A   ; Restricted to 125.00 MHz ( period = 8.000 ns ) ; y.t5 ; y.t6                 ; clock      ; clock    ; None                        ; None                      ; 1.500 ns                ;
+; N/A   ; Restricted to 125.00 MHz ( period = 8.000 ns ) ; y.t4 ; y.t5                 ; clock      ; clock    ; None                        ; None                      ; 1.500 ns                ;
+; N/A   ; 312.50 MHz ( period = 3.200 ns )               ; y.t1 ; controller[10]$latch ; clock      ; clock    ; None                        ; None                      ; 5.000 ns                ;
+; N/A   ; 333.33 MHz ( period = 3.000 ns )               ; y.t3 ; controller[8]$latch  ; clock      ; clock    ; None                        ; None                      ; 3.600 ns                ;
+; N/A   ; 1428.57 MHz ( period = 0.700 ns )              ; y.t1 ; controller[11]$latch ; clock      ; clock    ; None                        ; None                      ; 2.500 ns                ;
+; N/A   ; 1428.57 MHz ( period = 0.700 ns )              ; y.t2 ; controller[12]$latch ; clock      ; clock    ; None                        ; None                      ; 2.500 ns                ;
++-------+------------------------------------------------+------+----------------------+------------+----------+-----------------------------+---------------------------+-------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Hold: 'clock'                                                                                                                                                                 ;
++------------------------------------------+------+----------------------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Minimum Slack                            ; From ; To                   ; From Clock ; To Clock ; Required Hold Relationship ; Required Shortest P2P Time ; Actual Shortest P2P Time ;
++------------------------------------------+------+----------------------+------------+----------+----------------------------+----------------------------+--------------------------+
+; Not operational: Clock Skew > Data Delay ; y.t1 ; controller[11]$latch ; clock      ; clock    ; None                       ; None                       ; 2.500 ns                 ;
+; Not operational: Clock Skew > Data Delay ; y.t2 ; controller[12]$latch ; clock      ; clock    ; None                       ; None                       ; 2.500 ns                 ;
+; Not operational: Clock Skew > Data Delay ; y.t3 ; controller[8]$latch  ; clock      ; clock    ; None                       ; None                       ; 3.600 ns                 ;
+; Not operational: Clock Skew > Data Delay ; y.t1 ; controller[10]$latch ; clock      ; clock    ; None                       ; None                       ; 5.000 ns                 ;
++------------------------------------------+------+----------------------+------------+----------+----------------------------+----------------------------+--------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; tsu                                                                                              ;
++-------+--------------+------------+-------------------+----------------------+-------------------+
+; Slack ; Required tsu ; Actual tsu ; From              ; To                   ; To Clock          ;
++-------+--------------+------------+-------------------+----------------------+-------------------+
+; N/A   ; None         ; 8.000 ns   ; operation_code[1] ; controller[6]$latch  ; clock             ;
+; N/A   ; None         ; 7.500 ns   ; operation_code[2] ; controller[6]$latch  ; clock             ;
+; N/A   ; None         ; 6.700 ns   ; operation_code[1] ; controller[6]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 6.400 ns   ; operation_code[1] ; controller[6]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 6.400 ns   ; operation_code[1] ; controller[6]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 6.200 ns   ; operation_code[1] ; controller[6]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 6.200 ns   ; operation_code[2] ; controller[6]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 6.100 ns   ; operation_code[3] ; y.t4                 ; clock             ;
+; N/A   ; None         ; 6.100 ns   ; operation_code[3] ; y.t3                 ; clock             ;
+; N/A   ; None         ; 6.000 ns   ; operation_code[1] ; controller[3]$latch  ; clock             ;
+; N/A   ; None         ; 5.900 ns   ; operation_code[1] ; y.t4                 ; clock             ;
+; N/A   ; None         ; 5.900 ns   ; operation_code[1] ; y.t3                 ; clock             ;
+; N/A   ; None         ; 5.900 ns   ; operation_code[2] ; y.t4                 ; clock             ;
+; N/A   ; None         ; 5.900 ns   ; operation_code[2] ; y.t3                 ; clock             ;
+; N/A   ; None         ; 5.900 ns   ; operation_code[2] ; controller[6]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 5.900 ns   ; operation_code[2] ; controller[6]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 5.700 ns   ; operation_code[2] ; controller[6]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 5.700 ns   ; operation_code[3] ; controller[10]$latch ; clock             ;
+; N/A   ; None         ; 5.600 ns   ; operation_code[4] ; y.t4                 ; clock             ;
+; N/A   ; None         ; 5.600 ns   ; operation_code[4] ; y.t3                 ; clock             ;
+; N/A   ; None         ; 5.500 ns   ; operation_code[1] ; controller[10]$latch ; clock             ;
+; N/A   ; None         ; 5.500 ns   ; operation_code[2] ; controller[3]$latch  ; clock             ;
+; N/A   ; None         ; 5.500 ns   ; operation_code[2] ; controller[10]$latch ; clock             ;
+; N/A   ; None         ; 5.500 ns   ; operation_code[3] ; controller[7]$latch  ; clock             ;
+; N/A   ; None         ; 5.300 ns   ; operation_code[1] ; controller[7]$latch  ; clock             ;
+; N/A   ; None         ; 5.300 ns   ; operation_code[2] ; controller[7]$latch  ; clock             ;
+; N/A   ; None         ; 5.200 ns   ; operation_code[4] ; controller[10]$latch ; clock             ;
+; N/A   ; None         ; 5.000 ns   ; operation_code[3] ; controller[1]$latch  ; clock             ;
+; N/A   ; None         ; 5.000 ns   ; operation_code[3] ; controller[5]$latch  ; clock             ;
+; N/A   ; None         ; 5.000 ns   ; operation_code[3] ; controller[6]$latch  ; clock             ;
+; N/A   ; None         ; 5.000 ns   ; operation_code[4] ; controller[6]$latch  ; clock             ;
+; N/A   ; None         ; 5.000 ns   ; operation_code[4] ; controller[7]$latch  ; clock             ;
+; N/A   ; None         ; 4.800 ns   ; operation_code[1] ; controller[1]$latch  ; clock             ;
+; N/A   ; None         ; 4.800 ns   ; operation_code[1] ; controller[5]$latch  ; clock             ;
+; N/A   ; None         ; 4.800 ns   ; operation_code[2] ; controller[1]$latch  ; clock             ;
+; N/A   ; None         ; 4.800 ns   ; operation_code[2] ; controller[5]$latch  ; clock             ;
+; N/A   ; None         ; 4.700 ns   ; operation_code[1] ; controller[3]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 4.500 ns   ; operation_code[4] ; controller[1]$latch  ; clock             ;
+; N/A   ; None         ; 4.500 ns   ; operation_code[4] ; controller[5]$latch  ; clock             ;
+; N/A   ; None         ; 4.400 ns   ; operation_code[1] ; controller[3]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 4.400 ns   ; operation_code[1] ; controller[3]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 4.400 ns   ; operation_code[3] ; controller[10]$latch ; operation_code[4] ;
+; N/A   ; None         ; 4.200 ns   ; operation_code[1] ; controller[3]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 4.200 ns   ; operation_code[1] ; controller[10]$latch ; operation_code[4] ;
+; N/A   ; None         ; 4.200 ns   ; operation_code[2] ; controller[3]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 4.200 ns   ; operation_code[2] ; controller[10]$latch ; operation_code[4] ;
+; N/A   ; None         ; 4.200 ns   ; operation_code[3] ; controller[7]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 4.100 ns   ; operation_code[3] ; controller[10]$latch ; operation_code[2] ;
+; N/A   ; None         ; 4.100 ns   ; operation_code[3] ; controller[10]$latch ; operation_code[1] ;
+; N/A   ; None         ; 4.000 ns   ; operation_code[1] ; controller[7]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 4.000 ns   ; operation_code[2] ; controller[7]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 3.900 ns   ; operation_code[1] ; controller[10]$latch ; operation_code[2] ;
+; N/A   ; None         ; 3.900 ns   ; operation_code[1] ; controller[10]$latch ; operation_code[1] ;
+; N/A   ; None         ; 3.900 ns   ; operation_code[2] ; controller[3]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 3.900 ns   ; operation_code[2] ; controller[3]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 3.900 ns   ; operation_code[2] ; controller[10]$latch ; operation_code[2] ;
+; N/A   ; None         ; 3.900 ns   ; operation_code[2] ; controller[10]$latch ; operation_code[1] ;
+; N/A   ; None         ; 3.900 ns   ; operation_code[3] ; controller[7]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 3.900 ns   ; operation_code[3] ; controller[7]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 3.900 ns   ; operation_code[3] ; controller[10]$latch ; operation_code[3] ;
+; N/A   ; None         ; 3.900 ns   ; operation_code[4] ; controller[10]$latch ; operation_code[4] ;
+; N/A   ; None         ; 3.700 ns   ; operation_code[1] ; controller[7]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 3.700 ns   ; operation_code[1] ; controller[7]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 3.700 ns   ; operation_code[1] ; controller[10]$latch ; operation_code[3] ;
+; N/A   ; None         ; 3.700 ns   ; operation_code[2] ; controller[3]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 3.700 ns   ; operation_code[2] ; controller[7]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 3.700 ns   ; operation_code[2] ; controller[7]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 3.700 ns   ; operation_code[2] ; controller[10]$latch ; operation_code[3] ;
+; N/A   ; None         ; 3.700 ns   ; operation_code[3] ; controller[1]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 3.700 ns   ; operation_code[3] ; controller[5]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 3.700 ns   ; operation_code[3] ; controller[6]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 3.700 ns   ; operation_code[3] ; controller[7]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 3.700 ns   ; operation_code[4] ; controller[6]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 3.700 ns   ; operation_code[4] ; controller[7]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 3.600 ns   ; operation_code[4] ; controller[10]$latch ; operation_code[2] ;
+; N/A   ; None         ; 3.600 ns   ; operation_code[4] ; controller[10]$latch ; operation_code[1] ;
+; N/A   ; None         ; 3.500 ns   ; operation_code[1] ; controller[1]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 3.500 ns   ; operation_code[1] ; controller[5]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 3.500 ns   ; operation_code[1] ; controller[7]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 3.500 ns   ; operation_code[2] ; controller[1]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 3.500 ns   ; operation_code[2] ; controller[5]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 3.500 ns   ; operation_code[2] ; controller[7]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 3.400 ns   ; operation_code[3] ; controller[1]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 3.400 ns   ; operation_code[3] ; controller[1]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 3.400 ns   ; operation_code[3] ; controller[5]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 3.400 ns   ; operation_code[3] ; controller[5]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 3.400 ns   ; operation_code[3] ; controller[6]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 3.400 ns   ; operation_code[3] ; controller[6]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 3.400 ns   ; operation_code[4] ; controller[6]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 3.400 ns   ; operation_code[4] ; controller[6]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 3.400 ns   ; operation_code[4] ; controller[7]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 3.400 ns   ; operation_code[4] ; controller[7]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 3.400 ns   ; operation_code[4] ; controller[10]$latch ; operation_code[3] ;
+; N/A   ; None         ; 3.200 ns   ; operation_code[1] ; controller[1]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 3.200 ns   ; operation_code[1] ; controller[1]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 3.200 ns   ; operation_code[1] ; controller[5]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 3.200 ns   ; operation_code[1] ; controller[5]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 3.200 ns   ; operation_code[2] ; controller[1]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 3.200 ns   ; operation_code[2] ; controller[1]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 3.200 ns   ; operation_code[2] ; controller[5]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 3.200 ns   ; operation_code[2] ; controller[5]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 3.200 ns   ; operation_code[3] ; controller[1]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 3.200 ns   ; operation_code[3] ; controller[5]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 3.200 ns   ; operation_code[3] ; controller[6]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 3.200 ns   ; operation_code[4] ; controller[1]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 3.200 ns   ; operation_code[4] ; controller[5]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 3.200 ns   ; operation_code[4] ; controller[6]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 3.200 ns   ; operation_code[4] ; controller[7]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 3.000 ns   ; operation_code[1] ; controller[1]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 3.000 ns   ; operation_code[1] ; controller[5]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 3.000 ns   ; operation_code[2] ; controller[1]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 3.000 ns   ; operation_code[2] ; controller[5]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 3.000 ns   ; operation_code[3] ; controller[3]$latch  ; clock             ;
+; N/A   ; None         ; 3.000 ns   ; operation_code[3] ; controller[9]$latch  ; clock             ;
+; N/A   ; None         ; 3.000 ns   ; operation_code[4] ; controller[3]$latch  ; clock             ;
+; N/A   ; None         ; 2.900 ns   ; operation_code[3] ; controller[2]$latch  ; clock             ;
+; N/A   ; None         ; 2.900 ns   ; operation_code[4] ; controller[1]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 2.900 ns   ; operation_code[4] ; controller[1]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 2.900 ns   ; operation_code[4] ; controller[5]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 2.900 ns   ; operation_code[4] ; controller[5]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 2.700 ns   ; operation_code[1] ; controller[2]$latch  ; clock             ;
+; N/A   ; None         ; 2.700 ns   ; operation_code[2] ; controller[2]$latch  ; clock             ;
+; N/A   ; None         ; 2.700 ns   ; operation_code[4] ; controller[1]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 2.700 ns   ; operation_code[4] ; controller[5]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 1.700 ns   ; operation_code[3] ; controller[3]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 1.700 ns   ; operation_code[3] ; controller[9]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 1.700 ns   ; operation_code[4] ; controller[3]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 1.600 ns   ; operation_code[3] ; controller[2]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 1.400 ns   ; operation_code[1] ; controller[2]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 1.400 ns   ; operation_code[2] ; controller[2]$latch  ; operation_code[4] ;
+; N/A   ; None         ; 1.400 ns   ; operation_code[3] ; controller[3]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 1.400 ns   ; operation_code[3] ; controller[3]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 1.400 ns   ; operation_code[3] ; controller[9]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 1.400 ns   ; operation_code[3] ; controller[9]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 1.400 ns   ; operation_code[4] ; controller[3]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 1.400 ns   ; operation_code[4] ; controller[3]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 1.300 ns   ; operation_code[3] ; controller[2]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 1.300 ns   ; operation_code[3] ; controller[2]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 1.200 ns   ; operation_code[3] ; controller[3]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 1.200 ns   ; operation_code[3] ; controller[9]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 1.200 ns   ; operation_code[4] ; controller[3]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 1.100 ns   ; operation_code[1] ; controller[2]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 1.100 ns   ; operation_code[1] ; controller[2]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 1.100 ns   ; operation_code[2] ; controller[2]$latch  ; operation_code[2] ;
+; N/A   ; None         ; 1.100 ns   ; operation_code[2] ; controller[2]$latch  ; operation_code[1] ;
+; N/A   ; None         ; 1.100 ns   ; operation_code[3] ; controller[2]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 0.900 ns   ; operation_code[1] ; controller[2]$latch  ; operation_code[3] ;
+; N/A   ; None         ; 0.900 ns   ; operation_code[2] ; controller[2]$latch  ; operation_code[3] ;
++-------+--------------+------------+-------------------+----------------------+-------------------+
+
+
++-----------------------------------------------------------------------------------------------+
+; tco                                                                                           ;
++-------+--------------+------------+----------------------+----------------+-------------------+
+; Slack ; Required tco ; Actual tco ; From                 ; To             ; From Clock        ;
++-------+--------------+------------+----------------------+----------------+-------------------+
+; N/A   ; None         ; 18.500 ns  ; controller[7]$latch  ; controller[7]  ; operation_code[3] ;
+; N/A   ; None         ; 18.500 ns  ; controller[3]$latch  ; controller[3]  ; operation_code[3] ;
+; N/A   ; None         ; 18.400 ns  ; controller[10]$latch ; controller[10] ; operation_code[3] ;
+; N/A   ; None         ; 18.300 ns  ; controller[7]$latch  ; controller[7]  ; operation_code[2] ;
+; N/A   ; None         ; 18.300 ns  ; controller[7]$latch  ; controller[7]  ; operation_code[1] ;
+; N/A   ; None         ; 18.300 ns  ; controller[3]$latch  ; controller[3]  ; operation_code[2] ;
+; N/A   ; None         ; 18.300 ns  ; controller[3]$latch  ; controller[3]  ; operation_code[1] ;
+; N/A   ; None         ; 18.200 ns  ; controller[10]$latch ; controller[10] ; operation_code[2] ;
+; N/A   ; None         ; 18.200 ns  ; controller[10]$latch ; controller[10] ; operation_code[1] ;
+; N/A   ; None         ; 18.000 ns  ; controller[7]$latch  ; controller[7]  ; operation_code[4] ;
+; N/A   ; None         ; 18.000 ns  ; controller[3]$latch  ; controller[3]  ; operation_code[4] ;
+; N/A   ; None         ; 17.900 ns  ; controller[10]$latch ; controller[10] ; operation_code[4] ;
+; N/A   ; None         ; 17.600 ns  ; controller[6]$latch  ; controller[6]  ; operation_code[3] ;
+; N/A   ; None         ; 17.600 ns  ; controller[5]$latch  ; controller[5]  ; operation_code[3] ;
+; N/A   ; None         ; 17.600 ns  ; controller[2]$latch  ; controller[2]  ; operation_code[3] ;
+; N/A   ; None         ; 17.600 ns  ; controller[1]$latch  ; controller[1]  ; operation_code[3] ;
+; N/A   ; None         ; 17.400 ns  ; controller[12]$latch ; controller[12] ; operation_code[3] ;
+; N/A   ; None         ; 17.400 ns  ; controller[11]$latch ; controller[11] ; operation_code[3] ;
+; N/A   ; None         ; 17.400 ns  ; controller[6]$latch  ; controller[6]  ; operation_code[2] ;
+; N/A   ; None         ; 17.400 ns  ; controller[6]$latch  ; controller[6]  ; operation_code[1] ;
+; N/A   ; None         ; 17.400 ns  ; controller[5]$latch  ; controller[5]  ; operation_code[2] ;
+; N/A   ; None         ; 17.400 ns  ; controller[5]$latch  ; controller[5]  ; operation_code[1] ;
+; N/A   ; None         ; 17.400 ns  ; controller[2]$latch  ; controller[2]  ; operation_code[2] ;
+; N/A   ; None         ; 17.400 ns  ; controller[2]$latch  ; controller[2]  ; operation_code[1] ;
+; N/A   ; None         ; 17.400 ns  ; controller[1]$latch  ; controller[1]  ; operation_code[2] ;
+; N/A   ; None         ; 17.400 ns  ; controller[1]$latch  ; controller[1]  ; operation_code[1] ;
+; N/A   ; None         ; 17.200 ns  ; controller[12]$latch ; controller[12] ; operation_code[2] ;
+; N/A   ; None         ; 17.200 ns  ; controller[12]$latch ; controller[12] ; operation_code[1] ;
+; N/A   ; None         ; 17.200 ns  ; controller[11]$latch ; controller[11] ; operation_code[2] ;
+; N/A   ; None         ; 17.200 ns  ; controller[11]$latch ; controller[11] ; operation_code[1] ;
+; N/A   ; None         ; 17.200 ns  ; controller[9]$latch  ; controller[9]  ; operation_code[3] ;
+; N/A   ; None         ; 17.100 ns  ; controller[6]$latch  ; controller[6]  ; operation_code[4] ;
+; N/A   ; None         ; 17.100 ns  ; controller[5]$latch  ; controller[5]  ; operation_code[4] ;
+; N/A   ; None         ; 17.100 ns  ; controller[2]$latch  ; controller[2]  ; operation_code[4] ;
+; N/A   ; None         ; 17.100 ns  ; controller[1]$latch  ; controller[1]  ; operation_code[4] ;
+; N/A   ; None         ; 17.000 ns  ; controller[9]$latch  ; controller[9]  ; operation_code[2] ;
+; N/A   ; None         ; 17.000 ns  ; controller[9]$latch  ; controller[9]  ; operation_code[1] ;
+; N/A   ; None         ; 16.900 ns  ; controller[12]$latch ; controller[12] ; operation_code[4] ;
+; N/A   ; None         ; 16.900 ns  ; controller[11]$latch ; controller[11] ; operation_code[4] ;
+; N/A   ; None         ; 16.700 ns  ; controller[9]$latch  ; controller[9]  ; operation_code[4] ;
+; N/A   ; None         ; 16.700 ns  ; controller[7]$latch  ; controller[7]  ; clock             ;
+; N/A   ; None         ; 16.700 ns  ; controller[3]$latch  ; controller[3]  ; clock             ;
+; N/A   ; None         ; 16.600 ns  ; controller[10]$latch ; controller[10] ; clock             ;
+; N/A   ; None         ; 16.200 ns  ; controller[8]$latch  ; controller[8]  ; operation_code[3] ;
+; N/A   ; None         ; 16.000 ns  ; controller[8]$latch  ; controller[8]  ; operation_code[2] ;
+; N/A   ; None         ; 16.000 ns  ; controller[8]$latch  ; controller[8]  ; operation_code[1] ;
+; N/A   ; None         ; 15.800 ns  ; controller[6]$latch  ; controller[6]  ; clock             ;
+; N/A   ; None         ; 15.800 ns  ; controller[5]$latch  ; controller[5]  ; clock             ;
+; N/A   ; None         ; 15.800 ns  ; controller[2]$latch  ; controller[2]  ; clock             ;
+; N/A   ; None         ; 15.800 ns  ; controller[1]$latch  ; controller[1]  ; clock             ;
+; N/A   ; None         ; 15.700 ns  ; controller[8]$latch  ; controller[8]  ; operation_code[4] ;
+; N/A   ; None         ; 15.600 ns  ; controller[12]$latch ; controller[12] ; clock             ;
+; N/A   ; None         ; 15.600 ns  ; controller[11]$latch ; controller[11] ; clock             ;
+; N/A   ; None         ; 15.400 ns  ; controller[9]$latch  ; controller[9]  ; clock             ;
+; N/A   ; None         ; 14.400 ns  ; controller[8]$latch  ; controller[8]  ; clock             ;
++-------+--------------+------------+----------------------+----------------+-------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; th                                                                                                     ;
++---------------+-------------+-----------+-------------------+----------------------+-------------------+
+; Minimum Slack ; Required th ; Actual th ; From              ; To                   ; To Clock          ;
++---------------+-------------+-----------+-------------------+----------------------+-------------------+
+; N/A           ; None        ; 4.200 ns  ; operation_code[1] ; controller[6]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 4.200 ns  ; operation_code[2] ; controller[6]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 4.000 ns  ; operation_code[1] ; controller[6]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 4.000 ns  ; operation_code[1] ; controller[6]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 4.000 ns  ; operation_code[2] ; controller[6]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 4.000 ns  ; operation_code[2] ; controller[6]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 3.700 ns  ; operation_code[1] ; controller[6]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 3.700 ns  ; operation_code[2] ; controller[6]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 3.000 ns  ; operation_code[1] ; controller[2]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 3.000 ns  ; operation_code[2] ; controller[2]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 2.800 ns  ; operation_code[1] ; controller[2]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 2.800 ns  ; operation_code[1] ; controller[2]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 2.800 ns  ; operation_code[2] ; controller[2]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 2.800 ns  ; operation_code[2] ; controller[2]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 2.800 ns  ; operation_code[3] ; controller[2]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 2.700 ns  ; operation_code[3] ; controller[3]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 2.700 ns  ; operation_code[3] ; controller[9]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 2.700 ns  ; operation_code[4] ; controller[3]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 2.600 ns  ; operation_code[3] ; controller[2]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 2.600 ns  ; operation_code[3] ; controller[2]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 2.500 ns  ; operation_code[1] ; controller[2]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 2.500 ns  ; operation_code[2] ; controller[2]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 2.500 ns  ; operation_code[3] ; controller[3]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 2.500 ns  ; operation_code[3] ; controller[3]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 2.500 ns  ; operation_code[3] ; controller[9]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 2.500 ns  ; operation_code[3] ; controller[9]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 2.500 ns  ; operation_code[4] ; controller[3]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 2.500 ns  ; operation_code[4] ; controller[3]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 2.400 ns  ; operation_code[1] ; controller[6]$latch  ; clock             ;
+; N/A           ; None        ; 2.400 ns  ; operation_code[2] ; controller[6]$latch  ; clock             ;
+; N/A           ; None        ; 2.300 ns  ; operation_code[3] ; controller[2]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 2.200 ns  ; operation_code[3] ; controller[3]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 2.200 ns  ; operation_code[3] ; controller[9]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 2.200 ns  ; operation_code[4] ; controller[3]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 1.200 ns  ; operation_code[1] ; controller[2]$latch  ; clock             ;
+; N/A           ; None        ; 1.200 ns  ; operation_code[2] ; controller[2]$latch  ; clock             ;
+; N/A           ; None        ; 1.200 ns  ; operation_code[4] ; controller[1]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 1.200 ns  ; operation_code[4] ; controller[5]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 1.000 ns  ; operation_code[3] ; controller[2]$latch  ; clock             ;
+; N/A           ; None        ; 1.000 ns  ; operation_code[4] ; controller[1]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 1.000 ns  ; operation_code[4] ; controller[1]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 1.000 ns  ; operation_code[4] ; controller[5]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 1.000 ns  ; operation_code[4] ; controller[5]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 0.900 ns  ; operation_code[1] ; controller[1]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 0.900 ns  ; operation_code[1] ; controller[5]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 0.900 ns  ; operation_code[2] ; controller[1]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 0.900 ns  ; operation_code[2] ; controller[5]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 0.900 ns  ; operation_code[3] ; controller[3]$latch  ; clock             ;
+; N/A           ; None        ; 0.900 ns  ; operation_code[3] ; controller[9]$latch  ; clock             ;
+; N/A           ; None        ; 0.900 ns  ; operation_code[4] ; controller[3]$latch  ; clock             ;
+; N/A           ; None        ; 0.700 ns  ; operation_code[1] ; controller[1]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 0.700 ns  ; operation_code[1] ; controller[1]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 0.700 ns  ; operation_code[1] ; controller[5]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 0.700 ns  ; operation_code[1] ; controller[5]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 0.700 ns  ; operation_code[2] ; controller[1]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 0.700 ns  ; operation_code[2] ; controller[1]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 0.700 ns  ; operation_code[2] ; controller[5]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 0.700 ns  ; operation_code[2] ; controller[5]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 0.700 ns  ; operation_code[3] ; controller[1]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 0.700 ns  ; operation_code[3] ; controller[5]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 0.700 ns  ; operation_code[3] ; controller[6]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 0.700 ns  ; operation_code[4] ; controller[1]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 0.700 ns  ; operation_code[4] ; controller[5]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 0.700 ns  ; operation_code[4] ; controller[6]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 0.700 ns  ; operation_code[4] ; controller[7]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 0.500 ns  ; operation_code[3] ; controller[1]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 0.500 ns  ; operation_code[3] ; controller[1]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 0.500 ns  ; operation_code[3] ; controller[5]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 0.500 ns  ; operation_code[3] ; controller[5]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 0.500 ns  ; operation_code[3] ; controller[6]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 0.500 ns  ; operation_code[3] ; controller[6]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 0.500 ns  ; operation_code[4] ; controller[6]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 0.500 ns  ; operation_code[4] ; controller[6]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 0.500 ns  ; operation_code[4] ; controller[7]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 0.500 ns  ; operation_code[4] ; controller[7]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 0.500 ns  ; operation_code[4] ; controller[10]$latch ; operation_code[3] ;
+; N/A           ; None        ; 0.400 ns  ; operation_code[1] ; controller[1]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 0.400 ns  ; operation_code[1] ; controller[5]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 0.400 ns  ; operation_code[1] ; controller[7]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 0.400 ns  ; operation_code[2] ; controller[1]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 0.400 ns  ; operation_code[2] ; controller[5]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 0.400 ns  ; operation_code[2] ; controller[7]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 0.300 ns  ; operation_code[4] ; controller[10]$latch ; operation_code[2] ;
+; N/A           ; None        ; 0.300 ns  ; operation_code[4] ; controller[10]$latch ; operation_code[1] ;
+; N/A           ; None        ; 0.200 ns  ; operation_code[1] ; controller[7]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 0.200 ns  ; operation_code[1] ; controller[7]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 0.200 ns  ; operation_code[1] ; controller[10]$latch ; operation_code[3] ;
+; N/A           ; None        ; 0.200 ns  ; operation_code[2] ; controller[3]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 0.200 ns  ; operation_code[2] ; controller[7]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 0.200 ns  ; operation_code[2] ; controller[7]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 0.200 ns  ; operation_code[2] ; controller[10]$latch ; operation_code[3] ;
+; N/A           ; None        ; 0.200 ns  ; operation_code[3] ; controller[1]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 0.200 ns  ; operation_code[3] ; controller[5]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 0.200 ns  ; operation_code[3] ; controller[6]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 0.200 ns  ; operation_code[3] ; controller[7]$latch  ; operation_code[3] ;
+; N/A           ; None        ; 0.200 ns  ; operation_code[4] ; controller[6]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 0.200 ns  ; operation_code[4] ; controller[7]$latch  ; operation_code[4] ;
+; N/A           ; None        ; 0.000 ns  ; operation_code[1] ; controller[10]$latch ; operation_code[2] ;
+; N/A           ; None        ; 0.000 ns  ; operation_code[1] ; controller[10]$latch ; operation_code[1] ;
+; N/A           ; None        ; 0.000 ns  ; operation_code[2] ; controller[3]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 0.000 ns  ; operation_code[2] ; controller[3]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 0.000 ns  ; operation_code[2] ; controller[10]$latch ; operation_code[2] ;
+; N/A           ; None        ; 0.000 ns  ; operation_code[2] ; controller[10]$latch ; operation_code[1] ;
+; N/A           ; None        ; 0.000 ns  ; operation_code[3] ; controller[7]$latch  ; operation_code[2] ;
+; N/A           ; None        ; 0.000 ns  ; operation_code[3] ; controller[7]$latch  ; operation_code[1] ;
+; N/A           ; None        ; 0.000 ns  ; operation_code[3] ; controller[10]$latch ; operation_code[3] ;
+; N/A           ; None        ; 0.000 ns  ; operation_code[4] ; controller[10]$latch ; operation_code[4] ;
+; N/A           ; None        ; -0.100 ns ; operation_code[1] ; controller[7]$latch  ; operation_code[4] ;
+; N/A           ; None        ; -0.100 ns ; operation_code[2] ; controller[7]$latch  ; operation_code[4] ;
+; N/A           ; None        ; -0.200 ns ; operation_code[3] ; controller[10]$latch ; operation_code[2] ;
+; N/A           ; None        ; -0.200 ns ; operation_code[3] ; controller[10]$latch ; operation_code[1] ;
+; N/A           ; None        ; -0.300 ns ; operation_code[1] ; controller[3]$latch  ; operation_code[3] ;
+; N/A           ; None        ; -0.300 ns ; operation_code[1] ; controller[10]$latch ; operation_code[4] ;
+; N/A           ; None        ; -0.300 ns ; operation_code[2] ; controller[3]$latch  ; operation_code[4] ;
+; N/A           ; None        ; -0.300 ns ; operation_code[2] ; controller[10]$latch ; operation_code[4] ;
+; N/A           ; None        ; -0.300 ns ; operation_code[3] ; controller[7]$latch  ; operation_code[4] ;
+; N/A           ; None        ; -0.500 ns ; operation_code[1] ; controller[3]$latch  ; operation_code[2] ;
+; N/A           ; None        ; -0.500 ns ; operation_code[1] ; controller[3]$latch  ; operation_code[1] ;
+; N/A           ; None        ; -0.500 ns ; operation_code[3] ; controller[10]$latch ; operation_code[4] ;
+; N/A           ; None        ; -0.600 ns ; operation_code[4] ; controller[1]$latch  ; clock             ;
+; N/A           ; None        ; -0.600 ns ; operation_code[4] ; controller[5]$latch  ; clock             ;
+; N/A           ; None        ; -0.800 ns ; operation_code[1] ; controller[3]$latch  ; operation_code[4] ;
+; N/A           ; None        ; -0.900 ns ; operation_code[1] ; controller[1]$latch  ; clock             ;
+; N/A           ; None        ; -0.900 ns ; operation_code[1] ; controller[5]$latch  ; clock             ;
+; N/A           ; None        ; -0.900 ns ; operation_code[2] ; controller[1]$latch  ; clock             ;
+; N/A           ; None        ; -0.900 ns ; operation_code[2] ; controller[5]$latch  ; clock             ;
+; N/A           ; None        ; -1.100 ns ; operation_code[3] ; controller[1]$latch  ; clock             ;
+; N/A           ; None        ; -1.100 ns ; operation_code[3] ; controller[5]$latch  ; clock             ;
+; N/A           ; None        ; -1.100 ns ; operation_code[3] ; controller[6]$latch  ; clock             ;
+; N/A           ; None        ; -1.100 ns ; operation_code[4] ; controller[6]$latch  ; clock             ;
+; N/A           ; None        ; -1.100 ns ; operation_code[4] ; controller[7]$latch  ; clock             ;
+; N/A           ; None        ; -1.300 ns ; operation_code[4] ; controller[10]$latch ; clock             ;
+; N/A           ; None        ; -1.400 ns ; operation_code[1] ; controller[7]$latch  ; clock             ;
+; N/A           ; None        ; -1.400 ns ; operation_code[2] ; controller[7]$latch  ; clock             ;
+; N/A           ; None        ; -1.600 ns ; operation_code[1] ; controller[10]$latch ; clock             ;
+; N/A           ; None        ; -1.600 ns ; operation_code[2] ; controller[3]$latch  ; clock             ;
+; N/A           ; None        ; -1.600 ns ; operation_code[2] ; controller[10]$latch ; clock             ;
+; N/A           ; None        ; -1.600 ns ; operation_code[3] ; controller[7]$latch  ; clock             ;
+; N/A           ; None        ; -1.800 ns ; operation_code[3] ; controller[10]$latch ; clock             ;
+; N/A           ; None        ; -2.100 ns ; operation_code[1] ; controller[3]$latch  ; clock             ;
+; N/A           ; None        ; -2.900 ns ; operation_code[4] ; y.t4                 ; clock             ;
+; N/A           ; None        ; -2.900 ns ; operation_code[4] ; y.t3                 ; clock             ;
+; N/A           ; None        ; -3.200 ns ; operation_code[1] ; y.t4                 ; clock             ;
+; N/A           ; None        ; -3.200 ns ; operation_code[1] ; y.t3                 ; clock             ;
+; N/A           ; None        ; -3.200 ns ; operation_code[2] ; y.t4                 ; clock             ;
+; N/A           ; None        ; -3.200 ns ; operation_code[2] ; y.t3                 ; clock             ;
+; N/A           ; None        ; -3.400 ns ; operation_code[3] ; y.t4                 ; clock             ;
+; N/A           ; None        ; -3.400 ns ; operation_code[3] ; y.t3                 ; clock             ;
++---------------+-------------+-----------+-------------------+----------------------+-------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Classic Timing Analyzer
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Tue Sep 12 21:37:43 2023
+Info: Command: quartus_tan --read_settings_files=off --write_settings_files=off sapcontroller -c sapcontroller
+Info: Started post-fitting delay annotation
+Info: Delay annotation completed successfully
+Warning: Timing Analysis is analyzing one or more combinational loops as latches
+    Warning: Node "controller[1]$latch" is a latch
+    Warning: Node "controller[2]$latch" is a latch
+    Warning: Node "controller[3]$latch" is a latch
+    Warning: Node "controller[5]$latch" is a latch
+    Warning: Node "controller[6]$latch" is a latch
+    Warning: Node "controller[7]$latch" is a latch
+    Warning: Node "controller[8]$latch" is a latch
+    Warning: Node "controller[9]$latch" is a latch
+    Warning: Node "controller[10]$latch" is a latch
+    Warning: Node "controller[11]$latch" is a latch
+    Warning: Node "controller[12]$latch" is a latch
+Warning: Found pins functioning as undefined clocks and/or memory enables
+    Info: Assuming node "clock" is an undefined clock
+    Info: Assuming node "operation_code[4]" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "operation_code[3]" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "operation_code[2]" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+    Info: Assuming node "operation_code[1]" is a latch enable and/or memory write/read enable. Will not compute fmax for this pin.
+Warning: Found 9 node(s) in clock paths which may be acting as ripple and/or gated clocks -- node(s) analyzed as buffer(s) resulting in clock skew
+    Info: Detected gated clock "Selector19~68" as buffer
+    Info: Detected ripple clock "y.t5" as buffer
+    Info: Detected gated clock "Selector17~48" as buffer
+    Info: Detected gated clock "WideOr1~4" as buffer
+    Info: Detected ripple clock "y.t6" as buffer
+    Info: Detected ripple clock "y.t1" as buffer
+    Info: Detected ripple clock "y.t2" as buffer
+    Info: Detected ripple clock "y.t3" as buffer
+    Info: Detected ripple clock "y.t4" as buffer
+Info: Clock "clock" has Internal fmax of 156.25 MHz between source register "y.t6" and destination register "controller[6]$latch" (period= 6.4 ns)
+    Info: + Longest register to register delay is 8.300 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC5_A15; Fanout = 3; REG Node = 'y.t6'
+        Info: 2: + IC(0.600 ns) + CELL(1.900 ns) = 2.500 ns; Loc. = LC1_A15; Fanout = 2; COMB Node = 'Selector7~46'
+        Info: 3: + IC(1.900 ns) + CELL(1.400 ns) = 5.800 ns; Loc. = LC5_A13; Fanout = 1; COMB Node = 'Selector2~56'
+        Info: 4: + IC(0.600 ns) + CELL(1.900 ns) = 8.300 ns; Loc. = LC6_A13; Fanout = 1; REG Node = 'controller[6]$latch'
+        Info: Total cell delay = 5.200 ns ( 62.65 % )
+        Info: Total interconnect delay = 3.100 ns ( 37.35 % )
+    Info: - Smallest clock skew is 6.700 ns
+        Info: + Shortest clock path from clock "clock" to destination register is 10.600 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.900 ns) = 1.900 ns; Loc. = PIN_55; Fanout = 6; CLK Node = 'clock'
+            Info: 2: + IC(2.000 ns) + CELL(0.900 ns) = 4.800 ns; Loc. = LC5_A16; Fanout = 4; REG Node = 'y.t1'
+            Info: 3: + IC(0.600 ns) + CELL(1.900 ns) = 7.300 ns; Loc. = LC3_A16; Fanout = 6; COMB Node = 'Selector17~48'
+            Info: 4: + IC(1.900 ns) + CELL(1.400 ns) = 10.600 ns; Loc. = LC6_A13; Fanout = 1; REG Node = 'controller[6]$latch'
+            Info: Total cell delay = 6.100 ns ( 57.55 % )
+            Info: Total interconnect delay = 4.500 ns ( 42.45 % )
+        Info: - Longest clock path from clock "clock" to source register is 3.900 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.900 ns) = 1.900 ns; Loc. = PIN_55; Fanout = 6; CLK Node = 'clock'
+            Info: 2: + IC(2.000 ns) + CELL(0.000 ns) = 3.900 ns; Loc. = LC5_A15; Fanout = 3; REG Node = 'y.t6'
+            Info: Total cell delay = 1.900 ns ( 48.72 % )
+            Info: Total interconnect delay = 2.000 ns ( 51.28 % )
+    Info: + Micro clock to output delay of source is 0.900 ns
+    Info: + Micro setup delay of destination is 3.900 ns
+Warning: Circuit may not operate. Detected 4 non-operational path(s) clocked by clock "clock" with clock skew larger than data delay. See Compilation Report for details.
+Info: Found hold time violation between source  pin or register "y.t1" and destination pin or register "controller[11]$latch" for clock "clock" (Hold time is 3.2 ns)
+    Info: + Largest clock skew is 6.600 ns
+        Info: + Longest clock path from clock "clock" to destination register is 10.500 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.900 ns) = 1.900 ns; Loc. = PIN_55; Fanout = 6; CLK Node = 'clock'
+            Info: 2: + IC(2.000 ns) + CELL(0.900 ns) = 4.800 ns; Loc. = LC5_A15; Fanout = 3; REG Node = 'y.t6'
+            Info: 3: + IC(0.600 ns) + CELL(1.900 ns) = 7.300 ns; Loc. = LC7_A15; Fanout = 5; COMB Node = 'Selector19~68'
+            Info: 4: + IC(1.800 ns) + CELL(1.400 ns) = 10.500 ns; Loc. = LC2_A16; Fanout = 1; REG Node = 'controller[11]$latch'
+            Info: Total cell delay = 6.100 ns ( 58.10 % )
+            Info: Total interconnect delay = 4.400 ns ( 41.90 % )
+        Info: - Shortest clock path from clock "clock" to source register is 3.900 ns
+            Info: 1: + IC(0.000 ns) + CELL(1.900 ns) = 1.900 ns; Loc. = PIN_55; Fanout = 6; CLK Node = 'clock'
+            Info: 2: + IC(2.000 ns) + CELL(0.000 ns) = 3.900 ns; Loc. = LC5_A16; Fanout = 4; REG Node = 'y.t1'
+            Info: Total cell delay = 1.900 ns ( 48.72 % )
+            Info: Total interconnect delay = 2.000 ns ( 51.28 % )
+    Info: - Micro clock to output delay of source is 0.900 ns
+    Info: - Shortest register to register delay is 2.500 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC5_A16; Fanout = 4; REG Node = 'y.t1'
+        Info: 2: + IC(0.600 ns) + CELL(1.900 ns) = 2.500 ns; Loc. = LC2_A16; Fanout = 1; REG Node = 'controller[11]$latch'
+        Info: Total cell delay = 1.900 ns ( 76.00 % )
+        Info: Total interconnect delay = 0.600 ns ( 24.00 % )
+    Info: + Micro hold delay of destination is 0.000 ns
+Info: tsu for register "controller[6]$latch" (data pin = "operation_code[1]", clock pin = "clock") is 8.000 ns
+    Info: + Longest pin to register delay is 14.700 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.900 ns) = 1.900 ns; Loc. = PIN_124; Fanout = 6; CLK Node = 'operation_code[1]'
+        Info: 2: + IC(1.900 ns) + CELL(1.900 ns) = 5.700 ns; Loc. = LC2_A13; Fanout = 1; COMB Node = 'Selector7~45'
+        Info: 3: + IC(1.800 ns) + CELL(1.400 ns) = 8.900 ns; Loc. = LC1_A15; Fanout = 2; COMB Node = 'Selector7~46'
+        Info: 4: + IC(1.900 ns) + CELL(1.400 ns) = 12.200 ns; Loc. = LC5_A13; Fanout = 1; COMB Node = 'Selector2~56'
+        Info: 5: + IC(0.600 ns) + CELL(1.900 ns) = 14.700 ns; Loc. = LC6_A13; Fanout = 1; REG Node = 'controller[6]$latch'
+        Info: Total cell delay = 8.500 ns ( 57.82 % )
+        Info: Total interconnect delay = 6.200 ns ( 42.18 % )
+    Info: + Micro setup delay of destination is 3.900 ns
+    Info: - Shortest clock path from clock "clock" to destination register is 10.600 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.900 ns) = 1.900 ns; Loc. = PIN_55; Fanout = 6; CLK Node = 'clock'
+        Info: 2: + IC(2.000 ns) + CELL(0.900 ns) = 4.800 ns; Loc. = LC5_A16; Fanout = 4; REG Node = 'y.t1'
+        Info: 3: + IC(0.600 ns) + CELL(1.900 ns) = 7.300 ns; Loc. = LC3_A16; Fanout = 6; COMB Node = 'Selector17~48'
+        Info: 4: + IC(1.900 ns) + CELL(1.400 ns) = 10.600 ns; Loc. = LC6_A13; Fanout = 1; REG Node = 'controller[6]$latch'
+        Info: Total cell delay = 6.100 ns ( 57.55 % )
+        Info: Total interconnect delay = 4.500 ns ( 42.45 % )
+Info: tco from clock "operation_code[3]" to destination pin "controller[7]" through register "controller[7]$latch" is 18.500 ns
+    Info: + Longest clock path from clock "operation_code[3]" to source register is 12.400 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.900 ns) = 1.900 ns; Loc. = PIN_56; Fanout = 6; CLK Node = 'operation_code[3]'
+        Info: 2: + IC(2.000 ns) + CELL(1.900 ns) = 5.800 ns; Loc. = LC1_A17; Fanout = 2; COMB Node = 'WideOr1~4'
+        Info: 3: + IC(1.900 ns) + CELL(1.400 ns) = 9.100 ns; Loc. = LC3_A16; Fanout = 6; COMB Node = 'Selector17~48'
+        Info: 4: + IC(1.900 ns) + CELL(1.400 ns) = 12.400 ns; Loc. = LC2_A14; Fanout = 1; REG Node = 'controller[7]$latch'
+        Info: Total cell delay = 6.600 ns ( 53.23 % )
+        Info: Total interconnect delay = 5.800 ns ( 46.77 % )
+    Info: + Micro clock to output delay of source is 0.000 ns
+    Info: + Longest register to pin delay is 6.100 ns
+        Info: 1: + IC(0.000 ns) + CELL(0.000 ns) = 0.000 ns; Loc. = LC2_A14; Fanout = 1; REG Node = 'controller[7]$latch'
+        Info: 2: + IC(2.200 ns) + CELL(3.900 ns) = 6.100 ns; Loc. = PIN_100; Fanout = 0; PIN Node = 'controller[7]'
+        Info: Total cell delay = 3.900 ns ( 63.93 % )
+        Info: Total interconnect delay = 2.200 ns ( 36.07 % )
+Info: th for register "controller[6]$latch" (data pin = "operation_code[1]", clock pin = "operation_code[3]") is 4.200 ns
+    Info: + Longest clock path from clock "operation_code[3]" to destination register is 12.400 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.900 ns) = 1.900 ns; Loc. = PIN_56; Fanout = 6; CLK Node = 'operation_code[3]'
+        Info: 2: + IC(2.000 ns) + CELL(1.900 ns) = 5.800 ns; Loc. = LC1_A17; Fanout = 2; COMB Node = 'WideOr1~4'
+        Info: 3: + IC(1.900 ns) + CELL(1.400 ns) = 9.100 ns; Loc. = LC3_A16; Fanout = 6; COMB Node = 'Selector17~48'
+        Info: 4: + IC(1.900 ns) + CELL(1.400 ns) = 12.400 ns; Loc. = LC6_A13; Fanout = 1; REG Node = 'controller[6]$latch'
+        Info: Total cell delay = 6.600 ns ( 53.23 % )
+        Info: Total interconnect delay = 5.800 ns ( 46.77 % )
+    Info: + Micro hold delay of destination is 0.000 ns
+    Info: - Shortest pin to register delay is 8.200 ns
+        Info: 1: + IC(0.000 ns) + CELL(1.900 ns) = 1.900 ns; Loc. = PIN_124; Fanout = 6; CLK Node = 'operation_code[1]'
+        Info: 2: + IC(1.900 ns) + CELL(1.900 ns) = 5.700 ns; Loc. = LC5_A13; Fanout = 1; COMB Node = 'Selector2~56'
+        Info: 3: + IC(0.600 ns) + CELL(1.900 ns) = 8.200 ns; Loc. = LC6_A13; Fanout = 1; REG Node = 'controller[6]$latch'
+        Info: Total cell delay = 5.700 ns ( 69.51 % )
+        Info: Total interconnect delay = 2.500 ns ( 30.49 % )
+Info: Quartus II Classic Timing Analyzer was successful. 0 errors, 15 warnings
+    Info: Peak virtual memory: 174 megabytes
+    Info: Processing ended: Tue Sep 12 21:37:44 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

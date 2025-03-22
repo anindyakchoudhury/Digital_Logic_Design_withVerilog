@@ -1,0 +1,11 @@
+|fulladdstructual4bit
+cin => c.IN0
+cin => comb~0.IN0
+a => aandb.IN0
+a => ab.IN0
+b => aandb.IN1
+b => ab.IN1
+sum <= comb~0.DB_MAX_OUTPUT_PORT_TYPE
+cout <= comb~1.DB_MAX_OUTPUT_PORT_TYPE
+
+

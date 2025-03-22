@@ -1,0 +1,8 @@
+Analysis & Synthesis Status : Successful - Tue Aug 01 21:00:17 2023
+Quartus II Version : 8.1 Build 163 10/28/2008 SJ Web Edition
+Revision Name : mux4to1ifelse
+Top-level Entity Name : mux16to1
+Family : FLEX10K
+Total logic elements : 14
+Total pins : 21
+Total memory bits : 0

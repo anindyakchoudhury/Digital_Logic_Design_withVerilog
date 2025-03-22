@@ -1,0 +1,10 @@
+|zerozerooroneone_mealy
+clk => y~0.IN1
+reset => y~1.IN1
+w => Selector0.IN5
+w => Selector0.IN4
+w => y.B.DATAIN
+w => y.C.DATAIN
+z <= Selector0.DB_MAX_OUTPUT_PORT_TYPE
+
+

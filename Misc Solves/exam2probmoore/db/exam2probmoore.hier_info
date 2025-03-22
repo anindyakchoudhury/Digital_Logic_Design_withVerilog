@@ -1,0 +1,14 @@
+|exam2probmoore
+clk => y~4.IN1
+reset => y~3.OUTPUTSELECT
+reset => y~2.OUTPUTSELECT
+reset => y~1.OUTPUTSELECT
+reset => y~0.OUTPUTSELECT
+reset => y.A.DATAIN
+w => Selector3.IN0
+w => Selector1.IN2
+w => Selector2.IN0
+w => Selector0.IN0
+z <= z~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

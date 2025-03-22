@@ -1,0 +1,13 @@
+|exam2
+clk => y~4.IN1
+reset => y~3.OUTPUTSELECT
+reset => y~2.OUTPUTSELECT
+reset => y~1.OUTPUTSELECT
+reset => y~0.OUTPUTSELECT
+w1 => k~0.IN0
+w2 => k~0.IN1
+w3 => k~1.IN1
+z <= z~0.DB_MAX_OUTPUT_PORT_TYPE
+k <= k~1.DB_MAX_OUTPUT_PORT_TYPE
+
+

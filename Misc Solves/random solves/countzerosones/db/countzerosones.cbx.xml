@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="countzerosones">
+		<CBX_INST_ENTRY INSTANCE_NAME="|countzerosones|lpm_add_sub:Add2" CBX_FILE_NAME="add_sub_bnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|countzerosones|lpm_add_sub:Add1" CBX_FILE_NAME="add_sub_anh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|countzerosones|lpm_add_sub:Add3" CBX_FILE_NAME="add_sub_bnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|countzerosones|lpm_add_sub:Add5" CBX_FILE_NAME="add_sub_bnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|countzerosones|lpm_add_sub:Add7" CBX_FILE_NAME="add_sub_l3i.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|countzerosones|lpm_add_sub:Add9" CBX_FILE_NAME="add_sub_ojh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|countzerosones|lpm_add_sub:Add0" CBX_FILE_NAME="add_sub_9nh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|countzerosones|lpm_add_sub:Add4" CBX_FILE_NAME="add_sub_bnh.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|countzerosones|lpm_add_sub:Add8" CBX_FILE_NAME="add_sub_ojh.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

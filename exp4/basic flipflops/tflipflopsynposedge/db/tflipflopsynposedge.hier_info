@@ -1,0 +1,10 @@
+|tflipflopsynposedge
+clk => Q~reg0.CLK
+clk => Q1~reg0.CLK
+T => Q~0.OUTPUTSELECT
+reset => Q1~1.OUTPUTSELECT
+reset => Q~1.OUTPUTSELECT
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q1 <= Q1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

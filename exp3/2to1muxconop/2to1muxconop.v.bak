@@ -1,0 +1,6 @@
+module 2to1muxconop(w0, w1,selector, out);
+           input w0, w1, selector;
+           output outl;
+           assign out = selector? w1:w0;
+endmodule
+

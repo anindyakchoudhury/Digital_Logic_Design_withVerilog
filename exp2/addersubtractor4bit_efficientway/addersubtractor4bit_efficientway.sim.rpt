@@ -1,0 +1,564 @@
+Simulator report for addersubtractor4bit_efficientway
+Thu Aug 03 14:07:29 2023
+Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2008 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 80.0 us      ;
+; Simulation Netlist Size     ; 195 nodes    ;
+; Simulation Coverage         ;       0.00 % ;
+; Total Number of Transitions ; 9            ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; FLEX10K      ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.00 % ;
+; Total nodes checked                                 ; 195          ;
+; Total output ports checked                          ; 207          ;
+; Total output ports with complete 1/0-value coverage ; 0            ;
+; Total output ports with no 1/0-value coverage       ; 198          ;
+; Total output ports with no 1-value coverage         ; 206          ;
+; Total output ports with no 0-value coverage         ; 199          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------+
+; Complete 1/0-Value Coverage                     ;
++-----------+------------------+------------------+
+; Node Name ; Output Port Name ; Output Port Type ;
++-----------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                                         ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                             ; Output Port Name                                                                                      ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; |addersubtractor4bit_efficientway|always0~0                                                           ; |addersubtractor4bit_efficientway|always0~0                                                           ; out0             ;
+; |addersubtractor4bit_efficientway|m~0                                                                 ; |addersubtractor4bit_efficientway|m~0                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|m~1                                                                 ; |addersubtractor4bit_efficientway|m~1                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|m~2                                                                 ; |addersubtractor4bit_efficientway|m~2                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|m~3                                                                 ; |addersubtractor4bit_efficientway|m~3                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|m~4                                                                 ; |addersubtractor4bit_efficientway|m~4                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|m~5                                                                 ; |addersubtractor4bit_efficientway|m~5                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|m~6                                                                 ; |addersubtractor4bit_efficientway|m~6                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|m~7                                                                 ; |addersubtractor4bit_efficientway|m~7                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|m~8                                                                 ; |addersubtractor4bit_efficientway|m~8                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|m~9                                                                 ; |addersubtractor4bit_efficientway|m~9                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|a[0]                                                                ; |addersubtractor4bit_efficientway|a[0]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|a[1]                                                                ; |addersubtractor4bit_efficientway|a[1]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|a[2]                                                                ; |addersubtractor4bit_efficientway|a[2]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|a[3]                                                                ; |addersubtractor4bit_efficientway|a[3]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|b[0]                                                                ; |addersubtractor4bit_efficientway|b[0]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|b[1]                                                                ; |addersubtractor4bit_efficientway|b[1]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|b[2]                                                                ; |addersubtractor4bit_efficientway|b[2]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|b[3]                                                                ; |addersubtractor4bit_efficientway|b[3]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|s[0]                                                                ; |addersubtractor4bit_efficientway|s[0]                                                                ; pin_out          ;
+; |addersubtractor4bit_efficientway|s[1]                                                                ; |addersubtractor4bit_efficientway|s[1]                                                                ; pin_out          ;
+; |addersubtractor4bit_efficientway|s[2]                                                                ; |addersubtractor4bit_efficientway|s[2]                                                                ; pin_out          ;
+; |addersubtractor4bit_efficientway|s[3]                                                                ; |addersubtractor4bit_efficientway|s[3]                                                                ; pin_out          ;
+; |addersubtractor4bit_efficientway|cout                                                                ; |addersubtractor4bit_efficientway|cout                                                                ; pin_out          ;
+; |addersubtractor4bit_efficientway|LessThan0~16                                                        ; |addersubtractor4bit_efficientway|LessThan0~16                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~17                                                        ; |addersubtractor4bit_efficientway|LessThan0~17                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~18                                                        ; |addersubtractor4bit_efficientway|LessThan0~18                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~19                                                        ; |addersubtractor4bit_efficientway|LessThan0~19                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~20                                                        ; |addersubtractor4bit_efficientway|LessThan0~20                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~21                                                        ; |addersubtractor4bit_efficientway|LessThan0~21                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~22                                                        ; |addersubtractor4bit_efficientway|LessThan0~22                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~23                                                        ; |addersubtractor4bit_efficientway|LessThan0~23                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~24                                                        ; |addersubtractor4bit_efficientway|LessThan0~24                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~25                                                        ; |addersubtractor4bit_efficientway|LessThan0~25                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~26                                                        ; |addersubtractor4bit_efficientway|LessThan0~26                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~27                                                        ; |addersubtractor4bit_efficientway|LessThan0~27                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~28                                                        ; |addersubtractor4bit_efficientway|LessThan0~28                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[1]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[1]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[2]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[2]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[3]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[3]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[4]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[4]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[5]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[5]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                      ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[0]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[0]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]~0                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~0                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~0                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~1                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~1                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~2                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~2                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~3                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~3                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[5]~1                      ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[5]~1                      ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[5]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[5]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[4]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[4]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[3]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[3]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[2]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[2]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[1]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[1]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[5]~1                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[5]~1                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[4]~2                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[4]~2                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]~3                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]~3                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]~4                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]~4                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]~5                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]~5                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[5]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[5]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[4]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[4]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~4                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~4                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~5                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~5                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~6                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~6                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~7                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~7                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~8                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~8                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~9                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~9                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~10                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~10                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~11                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~11                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~12                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~12                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~13                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~13                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~14                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~14                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~15                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~15                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~16                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~16                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~17                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~17                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~18                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~18                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~19                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~19                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~20                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~20                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~21                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~21                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~22                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~22                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~23                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~23                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[4]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[3]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[2]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[1]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[1]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[2]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[2]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[3]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[3]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[4]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[4]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[5]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[5]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~0                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~1                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~2                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~3                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[5]~1                      ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[5]~1                      ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[5]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[5]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]~1                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]~1                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~2                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~2                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~3                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~3                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~4                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~4                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~5                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~5                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~4                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~4                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~5                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~5                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~6                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~6                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~7                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~8                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~9                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~9                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~10                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~10                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~11                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~11                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~12                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~12                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~13                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~13                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~14                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~14                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~15                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~15                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~16                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~16                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~17                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~17                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~18                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~18                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~19                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~19                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~20                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~20                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~21                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~21                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~22                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~22                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~23                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~23                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[4]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[3]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[2]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[0]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[0]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[1]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[1]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[2]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[2]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[3]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[3]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[4]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[4]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~0                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~1                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~2                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~3                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                      ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                      ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~2                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~2                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~3                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~3                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~4                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~4                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~4                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~5                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~6                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~7                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~8                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~9                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~10                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~11                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~11                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~12                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~12                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~13                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~13                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~14                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~14                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~15                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~15                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~16                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~16                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~17                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~17                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~18                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~18                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~19                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~19                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[3]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[2]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; sout             ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                         ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                             ; Output Port Name                                                                                      ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; |addersubtractor4bit_efficientway|always0~0                                                           ; |addersubtractor4bit_efficientway|always0~0                                                           ; out0             ;
+; |addersubtractor4bit_efficientway|m~0                                                                 ; |addersubtractor4bit_efficientway|m~0                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|m~1                                                                 ; |addersubtractor4bit_efficientway|m~1                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|m~2                                                                 ; |addersubtractor4bit_efficientway|m~2                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|m~3                                                                 ; |addersubtractor4bit_efficientway|m~3                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|m~4                                                                 ; |addersubtractor4bit_efficientway|m~4                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|m~9                                                                 ; |addersubtractor4bit_efficientway|m~9                                                                 ; out              ;
+; |addersubtractor4bit_efficientway|a[0]                                                                ; |addersubtractor4bit_efficientway|a[0]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|a[1]                                                                ; |addersubtractor4bit_efficientway|a[1]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|a[2]                                                                ; |addersubtractor4bit_efficientway|a[2]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|a[3]                                                                ; |addersubtractor4bit_efficientway|a[3]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|b[0]                                                                ; |addersubtractor4bit_efficientway|b[0]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|b[1]                                                                ; |addersubtractor4bit_efficientway|b[1]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|b[2]                                                                ; |addersubtractor4bit_efficientway|b[2]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|b[3]                                                                ; |addersubtractor4bit_efficientway|b[3]                                                                ; out              ;
+; |addersubtractor4bit_efficientway|s[0]                                                                ; |addersubtractor4bit_efficientway|s[0]                                                                ; pin_out          ;
+; |addersubtractor4bit_efficientway|ctrl                                                                ; |addersubtractor4bit_efficientway|ctrl                                                                ; out              ;
+; |addersubtractor4bit_efficientway|LessThan0~16                                                        ; |addersubtractor4bit_efficientway|LessThan0~16                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~17                                                        ; |addersubtractor4bit_efficientway|LessThan0~17                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~18                                                        ; |addersubtractor4bit_efficientway|LessThan0~18                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~19                                                        ; |addersubtractor4bit_efficientway|LessThan0~19                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~20                                                        ; |addersubtractor4bit_efficientway|LessThan0~20                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~21                                                        ; |addersubtractor4bit_efficientway|LessThan0~21                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~22                                                        ; |addersubtractor4bit_efficientway|LessThan0~22                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~23                                                        ; |addersubtractor4bit_efficientway|LessThan0~23                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~24                                                        ; |addersubtractor4bit_efficientway|LessThan0~24                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~25                                                        ; |addersubtractor4bit_efficientway|LessThan0~25                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~26                                                        ; |addersubtractor4bit_efficientway|LessThan0~26                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~27                                                        ; |addersubtractor4bit_efficientway|LessThan0~27                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|LessThan0~28                                                        ; |addersubtractor4bit_efficientway|LessThan0~28                                                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[1]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[1]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[2]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[2]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[3]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[3]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[4]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[4]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[5]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|result_node[5]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                      ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[0]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[0]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]~0                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~0                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~0                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~1                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~1                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~2                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~2                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~3                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~3                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[5]~1                      ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[5]~1                      ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[5]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[5]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[4]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[4]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[3]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[3]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[2]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[2]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[1]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|datab_node[1]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[5]~1                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[5]~1                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[4]~2                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[4]~2                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]~3                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]~3                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]~4                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]~4                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]~5                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]~5                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[5]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[5]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[4]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[4]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[3]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[2]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~4                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~4                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~5                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~5                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~6                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~6                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~7                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~7                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~8                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~8                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~9                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~9                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~10                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~10                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~11                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~11                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~12                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~12                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~13                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~13                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~14                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~14                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~15                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~15                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~16                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~16                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~17                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~17                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~18                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~18                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~19                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~19                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~20                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~20                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~21                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~21                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~22                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~22                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~23                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|_~23                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[4]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[3]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[2]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add2|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[1]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[1]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[2]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[2]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[3]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[3]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[4]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[4]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[5]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|result_node[5]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[0]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~0                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~0                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~1                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~1                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~2                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~2                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~3                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~3                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[5]~1                      ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[5]~1                      ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[5]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[5]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[4]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[3]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[2]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|datab_node[1]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]~1                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]~1                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~2                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]~2                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~3                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]~3                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~4                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]~4                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~5                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]~5                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[5]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[4]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[3]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[2]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~4                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~4                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~5                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~5                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~6                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~6                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~7                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~7                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~8                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~8                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~9                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~9                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~10                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~10                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~11                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~11                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~12                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~12                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~13                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~13                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~14                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~14                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~15                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~15                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~16                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~16                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~17                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~17                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~18                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~18                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~19                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~19                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~20                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~20                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~21                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~21                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~22                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~22                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~23                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|_~23                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[4]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[3]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[2]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add1|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[0]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[0]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[1]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[1]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[2]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[2]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[3]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[3]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[4]                                     ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|result_node[4]                                     ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~0                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~1                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~2                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~3                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                      ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[4]~1                      ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~1                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~2                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~2                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~3                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~3                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~4                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~4                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~4                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~5                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~6                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~7                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~8                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~9                                  ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~10                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~11                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~11                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~12                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~12                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~13                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~13                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~14                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~14                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~15                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~15                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~16                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~16                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~17                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~17                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~18                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~18                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~19                                 ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|_~19                                 ; out0             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[3]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[2]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[1]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; sout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cout[0]      ; cout             ;
+; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |addersubtractor4bit_efficientway|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; sout             ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
+    Info: Processing started: Thu Aug 03 14:07:28 2023
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off addersubtractor4bit_efficientway -c addersubtractor4bit_efficientway
+Info: Using vector source file "F:/Verilog Codes/exp2/addersubtractor4bit_efficientway/addersubtractor4bit_efficientway.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       0.00 %
+Info: Number of transitions in simulation is 9
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 151 megabytes
+    Info: Processing ended: Thu Aug 03 14:07:29 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+
